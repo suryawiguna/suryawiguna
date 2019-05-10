@@ -7,6 +7,9 @@
   html, body {
     height: 100%;
   }
+  h1 {
+      margin: 25px 0;
+  }
   /* width */
   ::-webkit-scrollbar {
     width: 8px;
@@ -42,6 +45,7 @@
     border-right: 1px solid #E0E0E0;
     border-top: none;
     overflow-y: hidden;
+    max-width: 800px;
   }
   .nav-container:hover {
     overflow: auto;
@@ -72,7 +76,6 @@
   .active {
     color: black;
     font-weight: bold;
-    background-color: rgb(247, 247, 247);
   }
   p {
     padding: 5px 0;
@@ -96,6 +99,7 @@
   }
   .skill-items {
     display: grid;
+    grid-gap: 2em;
     grid-column: 1;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
@@ -143,11 +147,11 @@
   .content-text {
     display: grid;
     grid-column: 1/6;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
   }
   .link-wrapper {
       display: flex;
-      justify-content: center;
+      justify-content: center
   }
   .btn {
       margin: 10px 0px 10px 0px;
@@ -259,8 +263,7 @@
       border-radius: 100%;
     }
     .content {
-      margin-left: 0;
-      margin-right: 0;
+      margin: 0 20px;
     }
     .label {
       font-size: 0.75em;
@@ -272,6 +275,7 @@
       padding: 0;
     }
     .skill-items {
+        grid-gap: 1em;
       grid-template-columns: repeat(2, 1fr);
     }
   }
