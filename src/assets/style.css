@@ -128,9 +128,8 @@ p, h4 {
     width: 150px !important;
 }
 .content {
-    padding: 20px 0 0;
-    
-    max-width: 600px;
+    margin-left: 0;
+    margin-right: 0;
 }
 .content-text {
   display: grid;
@@ -228,7 +227,6 @@ p, h4 {
     border-right: none;
   }
   #main {
-      padding: 2em;
     grid-column: 1/6;
     grid-row: 1/6;
   }
