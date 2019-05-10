@@ -134,6 +134,7 @@ p, h4 {
 .content {
     margin: 1em auto;
     max-width: 600px;
+    height: 100%;
 }
 .content-text {
   display: grid;
@@ -231,7 +232,7 @@ p, h4 {
     border-right: none;
   }
   #main {
-      padding: 1em 2em 0 2em;
+      padding: 2em;
     grid-column: 1/6;
     grid-row: 1/6;
   }
