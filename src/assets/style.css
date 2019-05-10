@@ -2,14 +2,10 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
-html {
+html, body {
   margin: 0 auto;
   padding: 0;
   height: 100%;
-}
-body {
-    margin: 0 auto;
-    padding: 0;
 }
 h1 {
     margin: 0 0 25px;
@@ -132,9 +128,9 @@ p, h4 {
     width: 150px !important;
 }
 .content {
-    margin: 1em auto;
+    padding: 20px 0 0;
+    margin: 0 auto;
     max-width: 600px;
-    height: 100%;
 }
 .content-text {
   display: grid;
@@ -256,6 +252,7 @@ p, h4 {
     border-radius: 100%;
   }
   .content {
+    padding: 0;
     margin:0;
   }
   .label {
