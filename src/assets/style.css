@@ -1,6 +1,6 @@
 * {
-margin: 0;
-padding: 0;
+    margin: 0 ;
+    padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
@@ -128,8 +128,9 @@ p, h4 {
     width: 150px !important;
 }
 .content {
-    margin-left: 0;
-    margin-right: 0;
+    padding: 20px 0 0;
+    margin: 0 auto;
+    max-width: 600px;
 }
 .content-text {
   display: grid;
@@ -227,6 +228,7 @@ p, h4 {
     border-right: none;
   }
   #main {
+      padding: 2em;
     grid-column: 1/6;
     grid-row: 1/6;
   }
