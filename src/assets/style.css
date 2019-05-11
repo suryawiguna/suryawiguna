@@ -218,12 +218,13 @@
       grid-template-areas: 
       "main"
       "nav";
-      height: 100%;
-      overflow: auto;
+      width: 100%;
+      max-width: 100%;
     }
     .nav-container {
-        display: grid;
         grid-area: nav;
+        display: grid;
+        grid-row: 2/3;
       z-index: 1;
       overflow-x: auto;
       border-top: 1px solid #E0E0E0;
@@ -237,6 +238,8 @@
     }
     #main {
         grid-area: main;
+        grid-row: 1/2;
+        overflow-y: auto;
     }
     #main-nav {
       display: flex;
