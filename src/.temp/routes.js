@@ -6,27 +6,21 @@ export default [
     meta: { isStatic: true }
   },
   {
-    name: "portfolio",
-    path: "/portfolio",
-    component: () => import(/* webpackChunkName: "component--portfolio" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Portfolio.vue"),
-    meta: { isStatic: true }
-  },
-  {
     name: "home",
     path: "/",
     component: () => import(/* webpackChunkName: "component--home" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Index.vue"),
     meta: { isStatic: true }
   },
   {
-    name: "experience",
-    path: "/experience",
-    component: () => import(/* webpackChunkName: "component--experience" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Experience.vue"),
+    name: "portfolio",
+    path: "/portfolio",
+    component: () => import(/* webpackChunkName: "component--portfolio" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Portfolio.vue"),
     meta: { isStatic: true }
   },
   {
-    name: "education",
-    path: "/education",
-    component: () => import(/* webpackChunkName: "component--education" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Education.vue"),
+    name: "about",
+    path: "/about",
+    component: () => import(/* webpackChunkName: "component--about" */ "D:\\gridsome\\suryawiguna\\src\\pages\\About.vue"),
     meta: { isStatic: true }
   },
   {
@@ -36,9 +30,15 @@ export default [
     meta: { isStatic: true }
   },
   {
-    name: "about",
-    path: "/about",
-    component: () => import(/* webpackChunkName: "component--about" */ "D:\\gridsome\\suryawiguna\\src\\pages\\About.vue"),
+    name: "education",
+    path: "/education",
+    component: () => import(/* webpackChunkName: "component--education" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Education.vue"),
+    meta: { isStatic: true }
+  },
+  {
+    name: "experience",
+    path: "/experience",
+    component: () => import(/* webpackChunkName: "component--experience" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Experience.vue"),
     meta: { isStatic: true }
   },
   {
