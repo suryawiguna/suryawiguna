@@ -6,7 +6,11 @@ import '~/assets/style.css'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
-  Vue.component('Layout', DefaultLayout)
+  Vue.component('Layout', DefaultLayout);
+
+  router.options.scrollBehavior = function(to, from , savedPosition) {
+    return savedPosition;
+  }
 
   head.link.push({
     rel: 'stylesheet',
