@@ -14,6 +14,6 @@ export default function (Vue, { router, head, isClient }) {
 
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i'
+    href: 'https://fonts.googleapis.com/css?family=Roboto:400,700|Vollkorn'
   })
 }

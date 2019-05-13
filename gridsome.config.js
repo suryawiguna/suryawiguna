@@ -6,5 +6,19 @@
 
 module.exports = {
   siteName: 'Surya Wiguna',
-  plugins: [],
+  plugins: [
+    {
+        use: '@gridsome/source-filesystem',
+        options: {
+          path: 'blog/*.md',
+          typeName: 'BlogPost',
+          route: '/blog/:slug'
+        }
+      }
+  ],
+  transformers: {
+    remark: {
+      externalLinksTarget: '_blank'
+    }
+  }
 }
