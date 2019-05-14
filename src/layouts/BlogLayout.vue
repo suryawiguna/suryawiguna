@@ -56,19 +56,19 @@
     font-weight: bold;
   }
   #main {
-    padding: 0px 40px;
+    padding: 0px 80px 30px;
     grid-area: main;
   }
   #nav-title {
-      font-size: 1.5em !important;
-      font-weight: bold;
-        font-family: 'Volkorn';
+        font-size: 1.5em !important;
+        font-weight: bold;
+        font-family: 'Lora';
   }
   .title {
-      font-size: 1.4em;
-      margin-bottom: 5px;
-      font-weight: bold;
-        font-family: 'Volkorn';
+        font-size: 1.4em;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-family: 'Lora';
   }
   p {
       line-height: 1.4em;
@@ -107,7 +107,7 @@
     #main {
         grid-area: main;
         overflow-y: auto;
-        padding: 0 20px;
+        padding: 0 20px 30px;
     }
     #main-nav a {
       font-size: 14px;

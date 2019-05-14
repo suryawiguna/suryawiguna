@@ -60,7 +60,7 @@
         line-height: 1.5em;
     }
     .blog-container {
-        margin: 30px 80px;
+        margin: 30px 0;
     }
     .blog-post {
         padding: 30px;
@@ -76,7 +76,7 @@
     }
     @media only screen and (max-width: 1080px) {
         .blog-container {
-            margin: 30px 20px;
+            margin: 30px 0;
         }
     }
     @media only screen and (max-width: 700px) {

@@ -30,15 +30,15 @@ export default [
     meta: { isStatic: true }
   },
   {
-    name: "blog",
-    path: "/blog",
-    component: () => import(/* webpackChunkName: "component--blog" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Blog.vue")
-  },
-  {
     name: "contact",
     path: "/contact",
     component: () => import(/* webpackChunkName: "component--contact" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Contact.vue"),
     meta: { isStatic: true }
+  },
+  {
+    name: "blog",
+    path: "/blog",
+    component: () => import(/* webpackChunkName: "component--blog" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Blog.vue")
   },
   {
     name: "about",

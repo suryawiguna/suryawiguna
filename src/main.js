@@ -14,6 +14,11 @@ export default function (Vue, { router, head, isClient }) {
 
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Roboto:400,700|Vollkorn'
+    href: 'https://fonts.googleapis.com/css?family=Roboto:400,700'
+  })
+
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://cdn.materialdesignicons.com/3.6.95/css/materialdesignicons.min.css'
   })
 }
