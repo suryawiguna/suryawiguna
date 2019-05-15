@@ -3,7 +3,7 @@
         <div class="nav-container">
             <div id="main-nav">
               <g-link id="nav-title" to="/blog" >Blog</g-link>
-              <g-link to="/" exact>About Me</g-link>
+              <g-link id="about-me" to="/" exact>About Me</g-link>
             </div>
         </div>
 
@@ -44,31 +44,28 @@
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    padding: 0 10px;
   }
   
   #main-nav a {
-    text-decoration: none;
-    color: rgb(29, 29, 29);
-    font-size: 14px;
+        text-decoration: none;
+        color: rgb(29, 29, 29);
+        font-size: 14px;
+        padding: 0 10px;
+        height: 100%;
+      display: flex;
+      align-items: center;
   }
   #main-nav a:hover {    
     font-weight: bold;
   }
   #main {
-    padding: 0px 80px 30px;
+    padding: 0px 80px;
     grid-area: main;
   }
   #nav-title {
         font-size: 1.5em !important;
         font-weight: bold;
-        font-family: 'Lora';
-  }
-  .title {
-        font-size: 1.4em;
-        margin-bottom: 5px;
-        font-weight: bold;
-        font-family: 'Lora';
+        font-family: 'Merriweather';
   }
   p {
       line-height: 1.4em;
@@ -79,6 +76,9 @@
       border: 1px solid #dfdfdf;
       border-radius: 10px;
   }
+  p>img.g-image {
+        height: 100px !important;
+    }
   @media only screen and (max-width: 700px) {
     .container {
       grid-gap: 0;
@@ -107,7 +107,7 @@
     #main {
         grid-area: main;
         overflow-y: auto;
-        padding: 0 20px 30px;
+        padding: 0 20px;
     }
     #main-nav a {
       font-size: 14px;

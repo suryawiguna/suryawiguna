@@ -1,14 +1,15 @@
 <template>
   <Layout>
-    <div class="article" style="margin-top:25px;">
-      <h1 style="margin:10px 0; font-family: Volkorn">{{ $page.blogPost.title }}</h1>
+    <div class="article">
+      <h1>{{ $page.blogPost.title }}</h1>
       <small style="color: #7a7a7a;">{{ $page.blogPost.date }}</small>
       <g-image :src="$page.blogPost.image"/>
-      <div id="paragraph" v-html="$page.blogPost.content" style="line-height: 2em; margin-top: 10px; margin-bottom: 10px;"/>
+      <div id="paragraph" v-html="$page.blogPost.content"/>
     </div><br>
-    <g-link to="/blog" style="text-decoration: none; border:1px solid black;padding:10px;border-radius:20px;">
-        <span class="mdi mdi-arrow-left"></span> Back
+    <g-link id="all-post" to="/blog">
+        <span class="mdi mdi-arrow-left"></span> All posts
     </g-link>
+    <br><br><br>
   </Layout>
 </template>
 
@@ -37,5 +38,38 @@
     }
 </script>
 
-<style scoped>
+<style>
+    .article {
+        margin-top:25px 0;
+    }
+    .article>h1 {
+        margin: 30px 0 10px;
+        font-family: Merriweather;
+        font-size: 2.3em;
+    }
+    #paragraph>p {
+        font-size: 17px;
+        line-height: 2em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #paragraph>p>img {
+        max-width: 70%;
+    }
+    #all-post {
+        text-decoration: none;
+        border:1px solid #bbbbbb;
+        color: #888888;
+        padding:10px;
+        border-radius:20px;
+    }
+    #all-post:hover {
+        color: #444444;  
+        border:1px solid #444444;
+    }
+    @media only screen and (max-width: 700px) {
+        #paragraph>p>img {
+            max-width: 100%;
+        }
+    }
 </style>

@@ -54,13 +54,14 @@
         font-family: Volkorn;
         font-weight: bold;
         color: #000000;
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
     div>p {
         line-height: 1.5em;
+        font-size: 17px;
     }
     .blog-container {
-        margin: 30px 0;
+        margin: 25px 0;
     }
     .blog-post {
         padding: 30px;
@@ -74,6 +75,12 @@
         font-size: 11px;
         color: #7a7a7a;
     }
+    .title {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-family: 'Merriweather';
+    }
     @media only screen and (max-width: 1080px) {
         .blog-container {
             margin: 30px 0;
@@ -81,7 +88,7 @@
     }
     @media only screen and (max-width: 700px) {
         .blog-container {
-            margin: 30px auto;
+            margin: 20px auto;
         }
     }
 </style>
