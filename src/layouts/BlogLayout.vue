@@ -9,6 +9,9 @@
 
         <div id="main">
             <slot/>
+            <footer>
+                <small>Blog by <g-link to="/">Surya Wiguna</g-link></small>
+            </footer>
         </div>
     </div>
 </template>
@@ -45,7 +48,9 @@
     align-items: center;
     background-color: white;
   }
-  
+  a {
+      text-decoration: none;
+  }
   #main-nav a {
         text-decoration: none;
         color: rgb(29, 29, 29);
@@ -78,6 +83,11 @@
   }
   p>img.g-image {
         height: 100px !important;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0 40px;
     }
   @media only screen and (max-width: 700px) {
     .container {

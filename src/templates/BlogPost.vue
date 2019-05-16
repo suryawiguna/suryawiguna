@@ -6,10 +6,12 @@
       <g-image :src="$page.blogPost.image"/>
       <div id="paragraph" v-html="$page.blogPost.content"/>
     </div><br>
+    <vue-disqus shortname="suryawigunaa" :identifier="$page.blogPost.title"></vue-disqus>
+    <br><br>
     <g-link id="all-post" to="/blog">
         <span class="mdi mdi-arrow-left"></span> All posts
     </g-link>
-    <br><br><br>
+    <br>
   </Layout>
 </template>
 
