@@ -30,9 +30,4 @@ export default function (Vue, { router, head, isClient }) {
     rel: 'stylesheet',
     href: 'https://cdn.materialdesignicons.com/3.6.95/css/materialdesignicons.min.css'
   })
-
-  head.script.push({
-      src: "https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js",
-      body: true
-  })
 }
