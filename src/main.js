@@ -4,6 +4,7 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import VueDisqus from 'vue-disqus'
 import '~/assets/style.css'
+import 'prismjs/themes/prism.css'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component

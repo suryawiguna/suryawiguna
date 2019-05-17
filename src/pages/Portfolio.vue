@@ -7,7 +7,7 @@
                 <p class="label">{{ val.field }}</p>
             </div>
             <div class="link-wrapper">
-                <a v-bind:href="val.link" v-bind:class="val.class">{{val.name}}</a>
+                <a v-bind:href="val.link" v-bind:class="val.class" target="_blank">{{val.name}}</a>
             </div>
         </div>
     </div>

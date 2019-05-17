@@ -3,7 +3,6 @@
     <div class="article">
       <h1>{{ $page.blogPost.title }}</h1>
       <small style="color: #7a7a7a;">{{ $page.blogPost.date }}</small>
-      <g-image :src="$page.blogPost.image"/>
       <div id="paragraph" v-html="$page.blogPost.content"/>
     </div><br>
     <!-- <vue-disqus shortname="suryawigunaa" :identifier="$page.blogPost.title"></vue-disqus> -->
