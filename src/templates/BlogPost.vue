@@ -5,7 +5,7 @@
       <small style="color: #7a7a7a;">{{ $page.blogPost.date }}</small>
       <div id="paragraph" v-html="$page.blogPost.content"/>
     </div><br>
-    <!-- <vue-disqus shortname="suryawigunaa" :identifier="$page.blogPost.title"></vue-disqus> -->
+    <vue-disqus shortname="suryawigunaa" :identifier="$page.blogPost.title"></vue-disqus>
     <br><br>
     <g-link id="all-post" to="/blog">
         <span class="mdi mdi-arrow-left"></span> All posts
@@ -47,6 +47,9 @@
         margin: 30px 0 10px;
         font-family: Merriweather;
         font-size: 2.3em;
+    }
+    #paragraph>h2 {
+        margin-top: 30px;
     }
     #paragraph>p {
         font-size: 17px;
