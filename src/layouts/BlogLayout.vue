@@ -8,7 +8,9 @@
         </div>
 
         <div id="main">
-            <slot/>
+            <div class="blog-container">
+                <slot/>
+            </div>
             <footer>
                 <small>Blog by <g-link to="/">Surya Wiguna</g-link></small>
             </footer>
@@ -39,7 +41,12 @@
     max-width: 960px;
     height: 60px;
   }
-
+  .blog-container {
+      padding: 20px 0;
+      display: grid;
+      grid-gap: 30px;
+      grid-template: 1fr/1fr;
+  }
   #main-nav {
       width: 100%;
     display: flex;
@@ -64,7 +71,7 @@
     font-weight: bold;
   }
   #main {
-    padding: 0px 80px;
+    padding: 0px 130px;
     grid-area: main;
   }
   #nav-title {
@@ -126,4 +133,9 @@
       margin: 20px 10px;
     }
   }
+    @media only screen and (max-width: 1080px) and (min-width: 700px) {
+        #main {
+            padding: 0 80px;
+        }
+    }
 </style>

@@ -9,10 +9,8 @@
   "dependencies": {
     "@gridsome/remark-prismjs": "^0.0.5",
     "@gridsome/source-filesystem": "^0.4.1",
-    "gridsome": "^0.5.0",
+    "@gridsome/transformer-remark": "^0.3.0",
+    "gridsome": "^0.6.2",
     "vue-disqus": "^3.0.5"
-  },
-  "devDependencies": {
-    "@gridsome/transformer-remark": "^0.3.0"
   }
 }

@@ -44,7 +44,7 @@
         margin-top:25px 0;
     }
     .article>h1 {
-        margin: 30px 0 10px;
+        margin: 20px 0 10px;
         font-family: Merriweather;
         font-size: 2.3em;
     }

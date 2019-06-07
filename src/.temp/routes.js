@@ -1,67 +1,61 @@
 export default [
   {
-    name: "skill",
-    path: "/skill",
-    component: () => import(/* webpackChunkName: "component--skill" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Skill.vue"),
-    meta: { isStatic: true }
-  },
-  {
-    name: "portfolio",
-    path: "/portfolio",
-    component: () => import(/* webpackChunkName: "component--portfolio" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Portfolio.vue"),
-    meta: { isStatic: true }
-  },
-  {
-    name: "home",
-    path: "/",
-    component: () => import(/* webpackChunkName: "component--home" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Index.vue"),
-    meta: { isStatic: true }
-  },
-  {
-    name: "experience",
     path: "/experience",
-    component: () => import(/* webpackChunkName: "component--experience" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Experience.vue"),
-    meta: { isStatic: true }
-  },
-  {
-    name: "education",
-    path: "/education",
-    component: () => import(/* webpackChunkName: "component--education" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Education.vue"),
-    meta: { isStatic: true }
-  },
-  {
-    name: "contact",
-    path: "/contact",
-    component: () => import(/* webpackChunkName: "component--contact" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Contact.vue"),
-    meta: { isStatic: true }
-  },
-  {
-    name: "blog",
-    path: "/blog",
-    component: () => import(/* webpackChunkName: "component--blog" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Blog.vue")
-  },
-  {
-    name: "about",
-    path: "/about",
-    component: () => import(/* webpackChunkName: "component--about" */ "D:\\gridsome\\suryawiguna\\src\\pages\\About.vue"),
-    meta: { isStatic: true }
+    component: () => import(/* webpackChunkName: "page--src-pages-experience-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Experience.vue"),
+    meta: { data: true }
   },
   {
     name: "404",
     path: "/404",
-    component: () => import(/* webpackChunkName: "component--404" */ "D:\\gridsome\\suryawiguna\\src\\pages\\404.vue"),
-    meta: { isStatic: true, isIndex: false }
+    component: () => import(/* webpackChunkName: "page--src-pages-404-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\404.vue"),
+    meta: { data: true }
   },
   {
-    name: "blogPost",
+    path: "/contact",
+    component: () => import(/* webpackChunkName: "page--src-pages-contact-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Contact.vue"),
+    meta: { data: true }
+  },
+  {
+    path: "/blog",
+    component: () => import(/* webpackChunkName: "page--src-pages-blog-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Blog.vue"),
+    meta: { data: true }
+  },
+  {
+    path: "/education",
+    component: () => import(/* webpackChunkName: "page--src-pages-education-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Education.vue"),
+    meta: { data: true }
+  },
+  {
+    path: "/about",
+    component: () => import(/* webpackChunkName: "page--src-pages-about-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\About.vue"),
+    meta: { data: true }
+  },
+  {
+    name: "home",
+    path: "/",
+    component: () => import(/* webpackChunkName: "page--src-pages-index-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Index.vue"),
+    meta: { data: true }
+  },
+  {
+    path: "/portfolio",
+    component: () => import(/* webpackChunkName: "page--src-pages-portfolio-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Portfolio.vue"),
+    meta: { data: true }
+  },
+  {
+    path: "/skill",
+    component: () => import(/* webpackChunkName: "page--src-pages-skill-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Skill.vue"),
+    meta: { data: true }
+  },
+  {
     path: "/blog/:slug",
-    component: () => import(/* webpackChunkName: "component--blog-post" */ "D:\\gridsome\\suryawiguna\\src\\templates\\BlogPost.vue")
+    component: () => import(/* webpackChunkName: "page--src-templates-blog-post-vue" */ "D:\\gridsome\\suryawiguna\\src\\templates\\BlogPost.vue"),
+    meta: { data: true }
   },
   {
     name: "*",
     path: "*",
-    component: () => import(/* webpackChunkName: "component--404" */ "D:\\gridsome\\suryawiguna\\src\\pages\\404.vue"),
-    meta: { isStatic: true, isIndex: false }
+    component: () => import(/* webpackChunkName: "page--src-pages-404-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\404.vue"),
+    meta: { data: true }
   }
 ]
 

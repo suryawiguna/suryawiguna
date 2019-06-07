@@ -1,14 +1,18 @@
 <template>
     <Layout>
-        <div class="blog-container" v-for="(val, key) in $page.blogPost.edges" :key="key">
-            <g-link :to="val.node.path">
-                <div class="blog-post">
-                    <h5 class="title">
-                            {{ val.node.title }}
-                    </h5>
-                    <p v-html="val.node.excerpt"></p>
-                    <div style="display: flex; justify-content: flex-end;">
-                        <small>{{ val.node.date }}</small>
+        <div v-for="edge in $page.blogPost.edges" :key="edge.node.id">
+            <g-link :to="edge.node.path">
+                <div class="blog-card">
+                    <g-image :src="edge.node.image" />
+                    <div class="blog-post">
+
+                        <h5 class="title">
+                                {{ edge.node.title }}
+                        </h5>
+                        <p v-html="edge.node.description"></p>
+                        <div style="display: flex; justify-content: flex-end;">
+                            <small>{{ edge.node.date }}</small>
+                        </div>
                     </div>
                 </div>
             </g-link>
@@ -21,10 +25,13 @@
         blogPost: allBlogPost {
             edges {
                 node {
+                    id
                     title
                     path
-                    excerpt
+                    slug
+                    description
                     date (format: "D MMM YYYY")
+                    image
                 }
             }
         }
@@ -60,15 +67,21 @@
         line-height: 1.5em;
         font-size: 17px;
     }
-    .blog-container {
-        margin: 25px 0;
-    }
-    .blog-post {
-        padding: 30px;
+    .blog-card {
         border: 1px solid #dfdfdf;
         border-radius: 10px;
     }
-    .blog-post:hover {
+    .blog-card>img {
+        object-fit: cover;
+        width: 100%;
+        height: 300px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .blog-post {
+        padding: 30px;
+    }
+    .blog-card:hover {
         border: 1px solid #444444;
     }
     small {
@@ -80,15 +93,5 @@
         margin-bottom: 5px;
         font-weight: bold;
         font-family: 'Merriweather';
-    }
-    @media only screen and (max-width: 1080px) {
-        .blog-container {
-            margin: 30px 0;
-        }
-    }
-    @media only screen and (max-width: 700px) {
-        .blog-container {
-            margin: 20px auto;
-        }
     }
 </style>

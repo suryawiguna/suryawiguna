@@ -3,5 +3,5 @@ export default {
   "siteName": "Surya Wiguna",
   "titleTemplate": "%s - Surya Wiguna",
   "siteDescription": "",
-  "version": "0.5.8"
+  "version": "0.6.2"
 }
