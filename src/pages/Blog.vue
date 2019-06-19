@@ -94,4 +94,9 @@
         font-weight: bold;
         font-family: 'Merriweather';
     }
+    @media only screen and (max-width: 600px) {
+        .blog-card>img {
+            height: 150px;
+        }
+    }
 </style>
