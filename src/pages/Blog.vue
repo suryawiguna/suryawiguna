@@ -68,7 +68,7 @@
         font-size: 17px;
     }
     .blog-card {
-        margin: 20px 0;
+        margin: 0;
         border: 1px solid #dfdfdf;
         border-radius: 10px;
     }

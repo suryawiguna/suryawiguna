@@ -42,8 +42,9 @@
     height: 60px;
   }
   .blog-container {
+      margin: 20px 0;
       display: grid;
-      grid-gap: 30px;
+      grid-gap: 20px;
       grid-template: 1fr/1fr;
   }
   #main-nav {
