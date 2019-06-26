@@ -46,6 +46,7 @@
       display: grid;
       grid-gap: 20px;
       grid-template: 1fr/1fr;
+      width: 100%;
   }
   #main-nav {
       width: 100%;

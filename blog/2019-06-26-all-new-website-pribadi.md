@@ -7,7 +7,7 @@ image: "./images/1.jpg"
 ---
 ![tampilan website personal saya](./images/1.jpg)
 
-Sudah lama saya ingin memiliki satu website pribadi yang menjadi tempat untuk membangun personal branding dan untuk membagikan tulisan-tulisan lewat blog. Namun, setelah saya mencoba berbagai platform mulai dari blog mainstream seperti Blogspot, Wordpress, hingga yang agak indie seperti GitHub Pages, semua website saya yang sebelumnya itu masih tradisional dengan link biasa yang jika diklik masih menampilkan loading spada browser. Akhirnya saya mengenal Vue.js dengan segala kehebatannya dan site generatornya seperti [Gridsome](https://gridsome.org) (yang saya pakai untuk membuat website ini), dan Vuepress.
+Sudah lama saya ingin memiliki satu website pribadi yang menjadi tempat untuk membangun personal branding dan untuk membagikan tulisan-tulisan lewat blog. Namun, setelah saya mencoba berbagai platform mulai dari blog mainstream seperti Blogspot, Wordpress, hingga yang agak indie seperti GitHub Pages, semua website saya yang sebelumnya itu masih tradisional dengan link biasa yang jika diklik masih menampilkan loading pada browser. Akhirnya saya mengenal Vue.js dengan segala kehebatannya dan site generatornya seperti [Gridsome](https://gridsome.org) (yang saya pakai untuk membuat website ini), dan Vuepress.
 
 ## Kenapa Gridsome?
 
@@ -16,15 +16,13 @@ Pertama, saya lihat Gridsome lebih simple dan lebih cocok untuk website yang tid
 ## Markdown dan GraphQL
 Selain Vue.js, hal lain yang benar-benar baru bagi saya adalah Markdown dan GraphQL. Markdown itu intinya adalah file berekstensi .md yang punya format sendiri yang biasanya dipakai untuk membuat file statis seperti dokumentasi dan bisa juga untuk blog. Contohnya seperti ini:
 
-    ## Ini Heading Level 2
 
-    **Ini paragraph bercetak tebal**
-
+`## Ini Heading Level 2`
+`**Ini paragraph bercetak tebal**`
 
 ## Ini Heading Level 2
-
 **Ini paragraph bercetak tebal**
 
-Sedangkan GraphQL itu merupakan query untuk mengambil data, yang penggunaannya familiar seperti JSON. Explore lebih jauh di [Websitenya GraphQL](https://graphql.org).
+Sedangkan GraphQL itu merupakan query untuk mengambil data, yang penggunaannya familiar seperti JSON. Explore lebih jauh di [websitenya GraphQL](https://graphql.org).
 
 Untuk sekarang saya sudah cukup puas dengan website saya sekarang, semoga dengan ini saya bisa lebih sering menulis untuk berbagi ke kalian tentang apapun yang terlintas.

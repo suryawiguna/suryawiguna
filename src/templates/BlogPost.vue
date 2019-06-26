@@ -7,33 +7,27 @@
     </div>
     <div id="share-this">
         <h5>Share This</h5>
-        <div id="share-buttons">
-    
+        <div id="share-buttons">    
             <!-- Facebook -->
             <a id="share-fb" href="#" target="_blank" class="share-btn" title="Share to Facebook">
-                <span class="mdi mdi-facebook mdi-36px"></span>
+                <span class="mdi mdi-facebook mdi-24px"></span>
             </a>
-
             <!-- WhatsApp -->
             <a id="share-wa" href="#" target="_blank" class="share-btn" title="Share to WhatsApp">
-                <span class="mdi mdi-whatsapp mdi-36px"></span>
+                <span class="mdi mdi-whatsapp mdi-24px"></span>
             </a>
-            
             <!-- Twitter -->
             <a id="share-twitter" href="#" target="_blank" class="share-btn" title="Share to Twitter">
-                <span class="mdi mdi-twitter mdi-36px"></span>                
+                <span class="mdi mdi-twitter mdi-24px"></span>                
             </a>
-
             <!-- LinkedIn -->
             <a id="share-linkedin" href="#" target="_blank" class="share-btn" title="Share to LinkedIn">
-                <span class="mdi mdi-linkedin mdi-36px"></span>                
+                <span class="mdi mdi-linkedin mdi-24px"></span>                
             </a>
-
             <!-- Email -->
             <a id="share-email" href="#" class="share-btn" title="Share to Email">
-                <span class="mdi mdi-email mdi-36px"></span>
+                <span class="mdi mdi-email mdi-24px"></span>
             </a>
-
         </div>
     </div>
     <vue-disqus shortname="suryawigunaa" :identifier="$page.blogPost.title"></vue-disqus>
@@ -77,6 +71,10 @@
 </script>
 
 <style>
+    #paragraph, #sharethis {
+        width: 100%;
+        max-width: 100%;
+    }
     p>a {
         color: #000000;
     }
@@ -91,8 +89,8 @@
         color: #ffffff;
         padding: 5px;
         border-radius: 50%;
-        height: 50px;
-        width: 50px;
+        height: 35px;
+        width: 35px;
     }
     .share-btn:hover {
         box-shadow: 0 0 0px 1px #000000;
@@ -102,9 +100,6 @@
     #share-twitter {background-color: #1DA1F2;}
     #share-linkedin {background-color: #0077B5;}
     #share-email {background-color: #444444;}
-    .article {
-        margin-top:25px 0;
-    }
     .article>h1 {
         margin: 0px 0 10px;
         font-family: Merriweather;
