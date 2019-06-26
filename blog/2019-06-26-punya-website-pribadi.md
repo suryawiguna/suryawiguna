@@ -2,7 +2,7 @@
 title: Punya Website Pribadi
 date: 2019-06-26 11:33:00
 slug: punya-website-pribadi
-description: "Sebuah cerita dalam membangun website pribadi yang lebih seamless dibanding sebelumnya"
+description: "Cerita dalam membangun website pribadi yang lebih seamless dibanding sebelumnya"
 image: "./images/1.jpg"
 ---
 ![tampilan website personal saya](./images/1.jpg)
