@@ -1,17 +1,17 @@
 <template>
     <Layout>
-        <div v-for="edge in $page.blogPost.edges" :key="edge.node.id">
-            <g-link :to="edge.node.path">
+        <div v-for="{ node } in $page.allBlogPost.edges" :key="node._id">
+            <g-link :to="node.path">
                 <div class="blog-card">
-                    <g-image :src="edge.node.image" />
+                    <g-image :src="node.image" />
                     <div class="blog-post">
 
                         <h5 class="title">
-                                {{ edge.node.title }}
+                                {{ node.title }}
                         </h5>
-                        <p v-html="edge.node.description"></p>
+                        <p v-html="node.description"></p>
                         <div style="display: flex; justify-content: flex-end;">
-                            <small>{{ edge.node.date }}</small>
+                            <small>{{ node.date }}</small>
                         </div>
                     </div>
                 </div>
@@ -21,11 +21,11 @@
 </template>
 
 <page-query>
-    query BlogPost {
-        blogPost: allBlogPost {
+    query Home ($page: Int) {
+        allBlogPost (page: $page) {
             edges {
                 node {
-                    id
+                    _id
                     title
                     path
                     slug

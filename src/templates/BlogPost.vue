@@ -77,6 +77,9 @@
 </script>
 
 <style>
+    p>a {
+        color: #000000;
+    }
     #share-buttons {
         display: flex;
     }
@@ -117,7 +120,7 @@
         margin-bottom: 10px;
     }
     #paragraph>p>img {
-        max-width: 70%;
+        max-width: 100%;
     }
     #all-post {
         justify-self: center;

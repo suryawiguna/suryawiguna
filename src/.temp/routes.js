@@ -1,8 +1,7 @@
 export default [
   {
-    name: "home",
-    path: "/",
-    component: () => import(/* webpackChunkName: "page--src-pages-index-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Index.vue"),
+    path: "/experience",
+    component: () => import(/* webpackChunkName: "page--src-pages-experience-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Experience.vue"),
     meta: { data: true }
   },
   {
@@ -27,13 +26,14 @@ export default [
     meta: { data: true }
   },
   {
-    path: "/experience",
-    component: () => import(/* webpackChunkName: "page--src-pages-experience-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Experience.vue"),
+    path: "/about",
+    component: () => import(/* webpackChunkName: "page--src-pages-about-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\About.vue"),
     meta: { data: true }
   },
   {
-    path: "/about",
-    component: () => import(/* webpackChunkName: "page--src-pages-about-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\About.vue"),
+    name: "home",
+    path: "/",
+    component: () => import(/* webpackChunkName: "page--src-pages-index-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Index.vue"),
     meta: { data: true }
   },
   {
