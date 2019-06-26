@@ -1,7 +1,7 @@
 ---
-title: Punya Website Pribadi
+title: All New Website Pribadi
 date: 2019-06-26 11:33:00
-slug: punya-website-pribadi
+slug: all-new-website-pribadi
 description: "Cerita dalam membangun website pribadi yang lebih seamless dibanding sebelumnya"
 image: "./images/1.jpg"
 ---
