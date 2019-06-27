@@ -53,12 +53,6 @@
 <script>
     import Layout from "~/layouts/BlogLayout.vue"
     export default {
-        computed: {
-            getImage : function() {
-                var firstImage = "https://suryawiguna.com"+document.getElementsByClassName("g-image")[0].getAttribute("data-srcset").split(' ')[2];
-                return firstImage;
-            }
-        },
         metaInfo () {
             return {
                 title: this.$page.blogPost.title,
@@ -71,6 +65,12 @@
                     { name: "twitter:creator", content: "@suryawigunaa" },
                 ],
                 script: [{ src: "https://platform.twitter.com/widgets.js", async: true }]
+            }
+        },
+        computed: {
+            getImage : function() {
+                var firstImage = "https://suryawiguna.com"+document.getElementsByClassName("g-image")[0].getAttribute("data-srcset").split(' ')[2];
+                return firstImage;
             }
         },
         components: {
