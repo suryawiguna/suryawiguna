@@ -53,7 +53,11 @@
 <script>
     import Layout from "~/layouts/BlogLayout.vue"
     export default {
-        
+        data() {
+            return {
+                firstImage: document.getElementsByClassName("g-image")[0].getAttribute("srcset").split(' ')[0]
+            }
+        },
         metaInfo () {
             return {
                 title: this.$page.blogPost.title,
@@ -74,7 +78,7 @@
         },
         mounted() {
             var url = window.location.href;
-            var firstImage = document.getElementsByClassName("g-image")[0].getAttribute("data-srcset").substr(0,firstImage.indexOf(' '));
+            var firstImage = document.getElementsByClassName("g-image")[0].getAttribute("data-srcset").split(' ')[0];
             console.log(firstImage);
             document.getElementById('share-fb').href = "https://www.facebook.com/sharer/sharer.php?u="+url;
             document.getElementById('share-wa').href = "https://wa.me/?text=Cek%20postingan%20ini%20"+url;
