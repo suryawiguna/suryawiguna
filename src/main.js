@@ -30,17 +30,4 @@ export default function (Vue, { router, head, isClient }) {
     rel: 'stylesheet',
     href: 'https://cdn.materialdesignicons.com/3.6.95/css/materialdesignicons.min.css'
   })
-
-  head.meta.push({
-    name: 'twitter:card',
-    content: 'summary'
-  })
-  head.meta.push({
-    name: 'twitter:site',
-    content: '@suryawigunaa'
-  })
-  head.meta.push({
-    name: 'twitter:creator',
-    content: '@suryawigunaa'
-  })
 }
