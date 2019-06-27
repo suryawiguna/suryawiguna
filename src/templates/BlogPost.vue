@@ -59,11 +59,12 @@
                     { name: "twitter:card", content: "summary" },
                     { name: "twitter:site", content: "@suryawigunaa" },
                     { name: "twitter:creator", content: "@suryawigunaa" },
-                    { name: "url", content: "https://suryawiguna.com/blog/"+this.$page.blogPost.slug },
-                    { name: "title", content: this.$page.blogPost.title },
+                    { name: "twitter:title", content: this.$page.blogPost.title },
+                    { name: "twitter:description", content: this.$page.blogPost.description },
+                    { name: "twitter:image", content: this.$page.blogPost.image },
                     { name: "description", content: this.$page.blogPost.description },
-                    { name: "image", content: this.$page.blogPost.image },
                 ],
+                script: [{ src: "https://platform.twitter.com/widgets.js", async: true }]
             }
         },
         components: {
