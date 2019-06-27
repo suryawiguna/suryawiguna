@@ -53,11 +53,6 @@
 <script>
     import Layout from "~/layouts/BlogLayout.vue"
     export default {
-        data() {
-            return {
-                firstImage: document.getElementsByClassName("g-image")[0].getAttribute("srcset").split(' ')[0]
-            }
-        },
         metaInfo () {
             return {
                 title: this.$page.blogPost.title,
@@ -67,7 +62,6 @@
                     { name: "twitter:creator", content: "@suryawigunaa" },
                     { name: "twitter:title", content: this.$page.blogPost.title },
                     { name: "twitter:description", content: this.$page.blogPost.description },
-                    { name: "twitter:image", content: this.firstImage },
                     { name: "description", content: this.$page.blogPost.description },
                 ],
                 script: [{ src: "https://platform.twitter.com/widgets.js", async: true }]
@@ -80,6 +74,10 @@
             var url = window.location.href;
             var firstImage = document.getElementsByClassName("g-image")[0].getAttribute("data-srcset").split(' ')[0];
             console.log(firstImage);
+            var meta = document.createElement('meta');
+            meta.name = "twitter:image";
+            meta.content = firstImage;
+            document.getElementsByTagName('head')[0].appendChild(meta);
             document.getElementById('share-fb').href = "https://www.facebook.com/sharer/sharer.php?u="+url;
             document.getElementById('share-wa').href = "https://wa.me/?text=Cek%20postingan%20ini%20"+url;
             document.getElementById('share-twitter').href = "https://twitter.com/share?url="+url+"&amp;text=Surya%20Wiguna%20Blog&amp;hashtags=suryawiguna";
