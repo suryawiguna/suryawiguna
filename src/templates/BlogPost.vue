@@ -53,6 +53,14 @@
 <script>
     import Layout from "~/layouts/BlogLayout.vue"
     export default {
+        computed: {
+            getImage : function() {
+                var firstImage = document.getElementsByClassName("g-image")[0].getAttribute("data-srcset").split(' ')[2];
+                var url = "https://suryawiguna.com";
+                var src = url.concat(firstImage);
+                return src;
+            }
+        },
         metaInfo () {
             return {
                 title: this.$page.blogPost.title,
@@ -61,16 +69,10 @@
                     { name: "twitter:title", content: this.$page.blogPost.title },
                     { name: "twitter:description", content: this.$page.blogPost.description },
                     { name: "twitter:site", content: "@suryawigunaa" },
-                    { name: "twitter:image", content: "https://suryawiguna.com"+document.getElementsByClassName("g-image")[0].getAttribute("data-srcset").split(' ')[2].toString() },
+                    { name: "twitter:image", content: this.getImage },
                     { name: "twitter:creator", content: "@suryawigunaa" },
                 ],
                 script: [{ src: "https://platform.twitter.com/widgets.js", async: true }]
-            }
-        },
-        computed: {
-            getImage : function() {
-                var firstImage = "https://suryawiguna.com"+document.getElementsByClassName("g-image")[0].getAttribute("data-srcset").split(' ')[2];
-                return firstImage;
             }
         },
         components: {
