@@ -55,7 +55,7 @@
     export default {
         data: function() {
             return {
-                firstImage: document.getElementsByClassName("g-image")[0].getAttribute("data-srcset").split(' ')[0]
+                firstImage: document.getElementsByClassName("g-image")[0].getAttribute("srcset").split(' ')[0]
             }
         },
         metaInfo () {
