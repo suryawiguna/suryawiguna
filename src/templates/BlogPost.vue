@@ -61,7 +61,7 @@
                     { name: "twitter:title", content: this.$page.blogPost.title },
                     { name: "twitter:description", content: this.$page.blogPost.description },
                     { name: "twitter:site", content: "@suryawigunaa" },
-                    { name: "twitter:image", content: "http://www.bmkg.go.id/asset/img/logo/bg_BMKG.jpg" },
+                    { name: "twitter:image", content: "https://suryawiguna.com/assets/static/1.42db587.9503358.jpg" },
                     { name: "twitter:creator", content: "@suryawigunaa" },
                 ],
                 script: [{ src: "https://platform.twitter.com/widgets.js", async: true }]
