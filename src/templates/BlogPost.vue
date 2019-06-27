@@ -76,7 +76,7 @@
             console.log(firstImage);
             var meta = document.createElement('meta');
             meta.name = "twitter:image";
-            meta.content = "https://suryawiguna.com/"+firstImage;
+            meta.content = "https://suryawiguna.com"+firstImage;
             document.getElementsByTagName('head')[0].appendChild(meta);
             document.getElementById('share-fb').href = "https://www.facebook.com/sharer/sharer.php?u="+url;
             document.getElementById('share-wa').href = "https://wa.me/?text=Cek%20postingan%20ini%20"+url;
