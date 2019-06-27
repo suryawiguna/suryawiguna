@@ -54,9 +54,10 @@
     import Layout from "~/layouts/BlogLayout.vue"
     export default {
         computed: {
-            getImage() {
+            getImage : function() {
                 var firstImage = document.getElementsByClassName("g-image")[0].getAttribute("data-srcset").split(' ')[2];
-                return firstImage;
+                var src = "https://suryawiguna.com"+firstImage;
+                return src;
             }
         },
         metaInfo () {
