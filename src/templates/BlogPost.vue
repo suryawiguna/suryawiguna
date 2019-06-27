@@ -56,7 +56,8 @@
     export default {
         computed: {
             getImage() {
-                return this.$refs.coverImage.getAttribute('data-srcset').split(' ')[2];
+                var img = this.$refs.coverImage.getAttribute('data-srcset');
+                return img.split(' ')[2];
             }
         },
         metaInfo () {
