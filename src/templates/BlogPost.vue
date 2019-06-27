@@ -56,7 +56,7 @@
         computed: {
             getImage() {
                 var firstImage = document.getElementsByClassName("g-image")[0].getAttribute("data-srcset").split(' ')[2];
-                return firstImage
+                return firstImage;
             }
         },
         metaInfo () {
