@@ -56,16 +56,14 @@
             return {
                 title: this.$page.blogPost.title,
                 meta: [
-                    { name: "description", content: this.$page.blogPost.description },
-                    // twitter-card: https://cards-dev.twitter.com/validator
-                    { name: "twitter:card", content: "summary_large_image" },
-                    { name: "twitter:description", content: this.$page.blogPost.description },
-                    { name: "twitter:title", content: this.$page.blogPost.title },
-                    { name: "twitter:site", content: "@therealdanvega" },
-                    { name: "twitter:image", content: this.$page.blogPost.image },
-                    { name: "twitter:creator", content: "@therealdanvega" }
+                    { name: "twitter:card", content: "summary" },
+                    { name: "twitter:site", content: "@suryawigunaa" },
+                    { name: "twitter:creator", content: "@suryawigunaa" },
+                    { property: "og:url", content: "https://suryawiguna.com/blog/"+this.$page.blogPost.slug },
+                    { property: "og:title", content: this.$page.blogPost.title },
+                    { property: "og:description", content: this.$page.blogPost.description },
+                    { property: "og:image", content: this.$page.blogPost.image },
                 ],
-                script: [{ src: "https://platform.twitter.com/widgets.js", async: true }]
             }
         },
         components: {
