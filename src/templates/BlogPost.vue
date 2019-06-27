@@ -55,7 +55,7 @@
     export default {
         data: function() {
             return {
-                getImage : "https://suryawiguna.com"+document.getElementsByClassName("g-image")[0].getAttribute("data-srcset").split(' ')[2]
+                getImage : "https://suryawiguna.com"
             }
         },
         metaInfo () {
