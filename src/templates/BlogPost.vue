@@ -61,6 +61,7 @@
                     { name: "twitter:title", content: this.$page.blogPost.title },
                     { name: "twitter:description", content: this.$page.blogPost.description },
                     { name: "twitter:site", content: "@suryawigunaa" },
+                    { name: "twitter:image", content: "http://www.bmkg.go.id/asset/img/logo/bg_BMKG.jpg" },
                     { name: "twitter:creator", content: "@suryawigunaa" },
                 ],
                 script: [{ src: "https://platform.twitter.com/widgets.js", async: true }]
@@ -71,11 +72,7 @@
         },
         mounted() {
             var url = window.location.href;
-            var firstImage = document.getElementsByClassName("g-image")[0].getAttribute("data-srcset").split(' ')[2];
-            console.log(firstImage);
-            var meta = document.createElement('meta');
-            meta.name = "twitter:image";
-            meta.content = "http://www.bmkg.go.id/asset/img/logo/bg_BMKG.jpg";
+            
             
             document.getElementsByTagName('head')[0].appendChild(meta);
             document.getElementById('share-fb').href = "https://www.facebook.com/sharer/sharer.php?u="+url;
