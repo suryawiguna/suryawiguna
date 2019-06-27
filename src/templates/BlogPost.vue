@@ -56,9 +56,7 @@
         computed: {
             getImage : function() {
                 var firstImage = document.getElementsByClassName("g-image")[0].getAttribute("data-srcset").split(' ')[2];
-                var url = "https://suryawiguna.com";
-                var src = url.concat(firstImage);
-                return src;
+                return firstImage;
             }
         },
         metaInfo () {
