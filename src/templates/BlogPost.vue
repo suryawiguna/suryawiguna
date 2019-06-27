@@ -72,7 +72,7 @@
         },
         mounted() {
             var url = window.location.href;
-            var firstImage = document.getElementsByClassName("g-image")[0].getAttribute("data-srcset").split(' ')[0];
+            var firstImage = document.getElementsByClassName("g-image")[0].getAttribute("data-srcset").split(' ')[1];
             console.log(firstImage);
             var meta = document.createElement('meta');
             meta.name = "twitter:image";
