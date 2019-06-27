@@ -58,11 +58,10 @@
                 title: this.$page.blogPost.title,
                 meta: [
                     { name: "twitter:card", content: "summary_large_image" },
-                    { name: "twitter:site", content: "@suryawigunaa" },
-                    { name: "twitter:creator", content: "@suryawigunaa" },
                     { name: "twitter:title", content: this.$page.blogPost.title },
                     { name: "twitter:description", content: this.$page.blogPost.description },
-                    { name: "description", content: this.$page.blogPost.description },
+                    { name: "twitter:site", content: "@suryawigunaa" },
+                    { name: "twitter:creator", content: "@suryawigunaa" },
                 ],
                 script: [{ src: "https://platform.twitter.com/widgets.js", async: true }]
             }
@@ -76,7 +75,8 @@
             console.log(firstImage);
             var meta = document.createElement('meta');
             meta.name = "twitter:image";
-            meta.content = "http://suryawiguna.com"+firstImage;
+            meta.content = "https://suryawiguna.com"+firstImage;
+            
             document.getElementsByTagName('head')[0].appendChild(meta);
             document.getElementById('share-fb').href = "https://www.facebook.com/sharer/sharer.php?u="+url;
             document.getElementById('share-wa').href = "https://wa.me/?text=Cek%20postingan%20ini%20"+url;
