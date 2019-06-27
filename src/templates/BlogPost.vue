@@ -73,6 +73,8 @@
         },
         mounted() {
             var url = window.location.href;
+            var firstImage = document.getElementsByClassName("g-image")[0].getAttribute("src");
+            console.log(firstImage);
             document.getElementById('share-fb').href = "https://www.facebook.com/sharer/sharer.php?u="+url;
             document.getElementById('share-wa').href = "https://wa.me/?text=Cek%20postingan%20ini%20"+url;
             document.getElementById('share-twitter').href = "https://twitter.com/share?url="+url+"&amp;text=Surya%20Wiguna%20Blog&amp;hashtags=suryawiguna";
