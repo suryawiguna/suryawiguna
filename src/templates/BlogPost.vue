@@ -57,7 +57,7 @@
             return {
                 title: this.$page.blogPost.title,
                 meta: [
-                    { name: "twitter:card", content: "summary" },
+                    { name: "twitter:card", content: "summary_large_image" },
                     { name: "twitter:site", content: "@suryawigunaa" },
                     { name: "twitter:creator", content: "@suryawigunaa" },
                     { name: "twitter:title", content: this.$page.blogPost.title },
