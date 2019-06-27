@@ -53,11 +53,7 @@
 <script>
     import Layout from "~/layouts/BlogLayout.vue"
     export default {
-        data: function() {
-            return {
-                firstImage: document.getElementsByClassName("g-image")[0].getAttribute("srcset").split(' ')[0]
-            }
-        },
+        
         metaInfo () {
             return {
                 title: this.$page.blogPost.title,
