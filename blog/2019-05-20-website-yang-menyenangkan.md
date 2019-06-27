@@ -5,7 +5,6 @@ slug: website-yang-menyenangkan
 description: "Sebuah website bisa menjadi sangat menyenangkan atau sangat menyebalkan. Tahu kenapa?"
 image: "./images/photo-1507297230445-ff678f10b524.jpg"
 ---
-![mengakses website](./images/photo-1507297230445-ff678f10b524.jpg)
 
 Website bisa dibilang adalah platform tertua untuk menyebarkan informasi lewat internet dan masih diandalkan sampai saat ini. Perkembangan teknologi yang berperan dibalik pengembangan website juga semakin meningkat. Desain suatu website bukan hanya memperhatikan estetika tapi juga kegunaan yang istilah kerennya UI (User Interface) dan UX (User Experience) yang bertujuan untuk menghadirkan website yang menyenangkan untuk diakses oleh pengguna. Ini sangat penting apalagi untuk website yang bertujuan untuk bisnis seperti e-commerce atau menawarkan service tertentu kepada pengguna yang berkunjung.
 

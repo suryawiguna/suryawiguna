@@ -3,6 +3,7 @@
     <div class="article">
       <h1>{{ $page.blogPost.title }}</h1>
       <small style="color: #7a7a7a;">{{ $page.blogPost.date }}</small>
+      <g-image :src="$page.blogPost.image" style="margin-top:15px;" ref="coverImage"/>
       <div id="paragraph" v-html="$page.blogPost.content"/>
     </div>
     <div id="share-this">
@@ -53,9 +54,9 @@
 <script>
     import Layout from "~/layouts/BlogLayout.vue"
     export default {
-        data: function() {
-            return {
-                getImage : "https://suryawiguna.com"
+        computed: {
+            getImage() {
+                return this.$refs.coverImage.getAttribute('data-srcset').split(' ')[2];
             }
         },
         metaInfo () {
@@ -77,8 +78,7 @@
         },
         mounted() {
             var url = window.location.href;
-            
-            document.getElementsByTagName('head')[0].appendChild(meta);
+
             document.getElementById('share-fb').href = "https://www.facebook.com/sharer/sharer.php?u="+url;
             document.getElementById('share-wa').href = "https://wa.me/?text=Cek%20postingan%20ini%20"+url;
             document.getElementById('share-twitter').href = "https://twitter.com/share?url="+url+"&amp;text=Surya%20Wiguna%20Blog&amp;hashtags=suryawiguna";
@@ -132,7 +132,7 @@
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    #paragraph>p>img {
+    img {
         max-width: 100%;
     }
     #all-post {

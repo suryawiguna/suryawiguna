@@ -5,7 +5,6 @@ slug: all-new-website-pribadi
 description: "Cerita dalam membangun website pribadi yang lebih seamless dibanding sebelumnya"
 image: "./images/1.jpg"
 ---
-![tampilan website pribadi saya](./images/1.jpg)
 
 Sudah lama saya ingin memiliki satu website pribadi yang menjadi tempat untuk membangun personal branding dan untuk membagikan tulisan-tulisan lewat blog. Namun, setelah saya mencoba berbagai platform mulai dari blog mainstream seperti Blogspot, Wordpress, hingga yang agak indie seperti GitHub Pages, semua website saya yang sebelumnya itu masih tradisional dengan link biasa yang jika diklik masih menampilkan loading pada browser. Akhirnya saya mengenal Vue.js dengan segala kehebatannya dan site generatornya seperti [Gridsome](https://gridsome.org) (yang saya pakai untuk membuat website ini), dan Vuepress.
 
