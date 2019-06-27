@@ -44,6 +44,7 @@
       date (format: "D MMMM, YYYY")
       content
       slug
+      image
     }
   }
 </page-query>
@@ -53,7 +54,18 @@
     export default {
         metaInfo () {
             return {
-                title: this.$page.blogPost.title
+                title: this.$page.blogPost.title,
+                meta: [
+                    { name: "description", content: this.$page.blogPost.description },
+                    // twitter-card: https://cards-dev.twitter.com/validator
+                    { name: "twitter:card", content: "summary_large_image" },
+                    { name: "twitter:description", content: this.$page.blogPost.description },
+                    { name: "twitter:title", content: this.$page.blogPost.title },
+                    { name: "twitter:site", content: "@therealdanvega" },
+                    { name: "twitter:image", content: this.$page.blogPost.image },
+                    { name: "twitter:creator", content: "@therealdanvega" }
+                ],
+                script: [{ src: "https://platform.twitter.com/widgets.js", async: true }]
             }
         },
         components: {
