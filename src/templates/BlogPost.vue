@@ -45,6 +45,7 @@
       content
       slug
       image
+      description
     }
   }
 </page-query>
