@@ -65,7 +65,7 @@
             this.getImage();
         },
         methods: {
-            getImage() {
+            getImage: function() {
                 var url = "https://suryawiguna.com";
                 var img = document.getElementById("cover-image").getAttribute("data-src");
                 var src = url + img;
