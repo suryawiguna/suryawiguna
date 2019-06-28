@@ -84,8 +84,14 @@
                 var url = "https://suryawiguna.com";
                 var img = document.getElementById("cover-image").getAttribute("data-src");
                 var src = url + img;
-                console.log(src);
-                this.$set(this.image, 'imgsrc', src);
+
+                var metas = document.getElementsByTagName("meta");
+                for (var i=0; i<metas.length; i++) {  
+                    if (metas[i].getAttribute("name") == "twitter:image") {
+                    console.log(metas[i]);
+                        metas[i].setAttribute("content", src);
+                    }
+                }
             
             var url = window.location.href;
 
