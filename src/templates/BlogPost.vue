@@ -57,7 +57,7 @@
         data() {
             return {
                 image: {
-                    imgsrc : "haha"
+                    imgsrc : "https://suryawiguna.com/assets/static/1.09b17d9.9503358.jpg"
                 }
             }
         },
@@ -80,18 +80,10 @@
             Layout
         },
         mounted() {
-            
-                var url = "https://suryawiguna.com";
-                var img = document.getElementById("cover-image").getAttribute("data-src");
-                var src = url + img;
+            var url = "https://suryawiguna.com";
+            var img = document.getElementById("cover-image").getAttribute("data-src");
+            var src = url + img;
 
-                var metas = document.getElementsByTagName("meta");
-                for (var i=0; i<metas.length; i++) {  
-                    if (metas[i].getAttribute("name") == "twitter:image") {
-                    console.log(metas[i]);
-                        metas[i].setAttribute("content", src);
-                    }
-                }
             
             var url = window.location.href;
 
