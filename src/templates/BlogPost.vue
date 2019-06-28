@@ -61,9 +61,6 @@
                 }
             }
         },
-        created(){
-            this.getImage()
-        },
         methods: {
             getImage: function() {
                 var url = "https://suryawiguna.com";
@@ -72,6 +69,9 @@
                 console.log(src);
                 this.$set(this.image, 'imgsrc', src);
             }
+        },
+        created(){
+            this.getImage()
         },
         metaInfo () {
             return {
