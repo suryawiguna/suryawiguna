@@ -3,7 +3,7 @@
     <div class="article">
       <h1>{{ $page.blogPost.title }}</h1>
       <small style="color: #7a7a7a;">{{ $page.blogPost.date }}</small>
-      <g-image :src="$page.blogPost.image" style="margin-top:15px;" ref="coverImage"/>
+      <g-image :src="$page.blogPost.image" style="margin-top:15px;" id="cover-image"/>
       <div id="paragraph" v-html="$page.blogPost.content"/>
     </div>
     <div id="share-this">
@@ -56,8 +56,10 @@
     export default {
         computed: {
             getImage() {
-                var img = this.$refs.coverImage.getAttribute('data-srcset');
-                return img.split(' ')[2];
+                var url = "https://suryawiguna.com";
+                var img = document.getElementById("cover-image").getAttribute("data-src");
+                var src = url + img;
+                return src;
             }
         },
         metaInfo () {
