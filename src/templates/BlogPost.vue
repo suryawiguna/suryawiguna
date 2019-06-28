@@ -70,7 +70,7 @@
                 this.$set(this.image, 'imgsrc', src);
             }
         },
-        created(){
+        created: function(){
             this.getImage()
         },
         metaInfo () {
