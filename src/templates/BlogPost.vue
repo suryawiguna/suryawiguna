@@ -61,9 +61,7 @@
                 }
             }
         },
-        created: function() {
-            this.getImage();
-        },
+
         methods: {
             getImage: function() {
                 var url = "https://suryawiguna.com";
