@@ -54,12 +54,23 @@
 <script>
     import Layout from "~/layouts/BlogLayout.vue"
     export default {
-        computed: {
+        data() {
+            return {
+                image: {
+                    imgsrc : "haha"
+                }
+            }
+        },
+        created: function() {
+            this.getImage();
+        },
+        methods: {
             getImage() {
                 var url = "https://suryawiguna.com";
                 var img = document.getElementById("cover-image").getAttribute("data-src");
                 var src = url + img;
-                return src;
+                console.log(src);
+                this.$set(this.image, 'imgsrc', src);
             }
         },
         metaInfo () {
@@ -70,7 +81,7 @@
                     { name: "twitter:title", content: this.$page.blogPost.title },
                     { name: "twitter:description", content: this.$page.blogPost.description },
                     { name: "twitter:site", content: "@suryawigunaa" },
-                    { name: "twitter:image", content: this.getImage },
+                    { name: "twitter:image", content: this.image.imgsrc },
                     { name: "twitter:creator", content: "@suryawigunaa" },
                 ],
                 script: [{ src: "https://platform.twitter.com/widgets.js", async: true }]
