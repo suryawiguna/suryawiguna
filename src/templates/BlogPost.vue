@@ -61,8 +61,16 @@
                 }
             }
         },
-        
+        computed: {
+            getImage() {
+                var url = "https://suryawiguna.com";
+                var img = document.getElementById("cover-image").getAttribute("data-src");
+                var src = url + img;
+                return src;
+            }
+        },
         metaInfo () {
+            let image = this.getImage;
             return {
                 title: this.$page.blogPost.title,
                 meta: [
@@ -70,7 +78,7 @@
                     { name: "twitter:title", content: this.$page.blogPost.title },
                     { name: "twitter:description", content: this.$page.blogPost.description },
                     { name: "twitter:site", content: "@suryawigunaa" },
-                    { name: "twitter:image", content: this.image.imgsrc },
+                    { name: "twitter:image", content: image },
                     { name: "twitter:creator", content: "@suryawigunaa" },
                 ],
                 script: [{ src: "https://platform.twitter.com/widgets.js", async: true }]
@@ -84,13 +92,12 @@
             var img = document.getElementById("cover-image").getAttribute("data-src");
             var src = url + img;
 
-            var metas = document.getElementsByTagName("meta");
-            for (var i=0; i<metas.length; i++) {  
-                if (metas[i].getAttribute("name") == "twitter:image") {
-                    metas[i].setAttribute("content", src);
-                    console.log(src);
-                }
-            }
+            // var metas = document.getElementsByTagName("meta");
+            // for (var i=0; i<metas.length; i++) {  
+            //     if (metas[i].getAttribute("name") == "twitter:image") {
+            //         metas[i].setAttribute("content", src);
+            //     }
+            // }
             var url = window.location.href;
 
             document.getElementById('share-fb').href = "https://www.facebook.com/sharer/sharer.php?u="+url;
