@@ -61,18 +61,7 @@
                 }
             }
         },
-        methods: {
-            getImage: function() {
-                var url = "https://suryawiguna.com";
-                var img = document.getElementById("cover-image").getAttribute("data-src");
-                var src = url + img;
-                console.log(src);
-                this.$set(this.image, 'imgsrc', src);
-            }
-        },
-        created: function(){
-            this.getImage()
-        },
+        
         metaInfo () {
             return {
                 title: this.$page.blogPost.title,
@@ -91,6 +80,13 @@
             Layout
         },
         mounted() {
+            this.$nextTick(function () {
+                var url = "https://suryawiguna.com";
+                var img = document.getElementById("cover-image").getAttribute("data-src");
+                var src = url + img;
+                console.log(src);
+                this.$set(this.image, 'imgsrc', src);
+            })
             var url = window.location.href;
 
             document.getElementById('share-fb').href = "https://www.facebook.com/sharer/sharer.php?u="+url;
