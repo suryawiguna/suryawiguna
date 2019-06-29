@@ -66,11 +66,11 @@
                 var url = "https://suryawiguna.com";
                 var img = document.getElementById("cover-image").getAttribute("data-src");
                 var src = url + img;
-                return src;
+                return {img: src};
             }
         },
         metaInfo () {
-            let image = this.getImage;
+            let image = this.getImage.img;
             return {
                 title: this.$page.blogPost.title,
                 meta: [
