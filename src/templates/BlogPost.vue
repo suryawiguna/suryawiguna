@@ -62,7 +62,7 @@
             }
         },
         computed: {
-            getImage: function() {
+            getImage() {
                 var url = "https://suryawiguna.com";
                 var img = document.getElementById("cover-image")
                 var text = img.getAttribute("data-src");
@@ -71,7 +71,8 @@
             }
         },
         metaInfo () {
-            let image = this.getImage;
+            var self = this;
+            let image = self.getImage;
             return {
                 title: this.$page.blogPost.title,
                 meta: [
