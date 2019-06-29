@@ -62,15 +62,14 @@
             }
         },
         computed: {
-            getImage() {
+            myImage() {
                 var url = "https://suryawiguna.com";
                 var img = document.getElementById("cover-image").getAttribute("data-src");
                 var src = url + img;
-                return {img: src};
+                return src;
             }
         },
         metaInfo () {
-            let image = this.getImage.img;
             return {
                 title: this.$page.blogPost.title,
                 meta: [
@@ -78,7 +77,7 @@
                     { name: "twitter:title", content: this.$page.blogPost.title },
                     { name: "twitter:description", content: this.$page.blogPost.description },
                     { name: "twitter:site", content: "@suryawigunaa" },
-                    { name: "twitter:image", content: image },
+                    { name: "twitter:image", content: this.myImage },
                     { name: "twitter:creator", content: "@suryawigunaa" },
                 ],
                 script: [{ src: "https://platform.twitter.com/widgets.js", async: true }]
