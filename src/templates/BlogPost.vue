@@ -62,15 +62,16 @@
             }
         },
         computed: {
-            getImage() {
+            getImage: function() {
                 var url = "https://suryawiguna.com";
-                var img = document.getElementById("cover-image").getAttribute("data-src");
-                var src = url + img;
+                var img = document.getElementById("cover-image")
+                var text = img.getAttribute("data-src");
+                var src = url + text;
                 return src;
             }
         },
         metaInfo () {
-            let image = this.getImage.img;
+            let image = this.getImage;
             return {
                 title: this.$page.blogPost.title,
                 meta: [
