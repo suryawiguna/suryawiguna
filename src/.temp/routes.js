@@ -16,8 +16,8 @@ export default [
     meta: { data: true }
   },
   {
-    path: "/about",
-    component: () => import(/* webpackChunkName: "page--src-pages-about-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\About.vue"),
+    path: "/contact",
+    component: () => import(/* webpackChunkName: "page--src-pages-contact-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Contact.vue"),
     meta: { data: true }
   },
   {
@@ -26,8 +26,8 @@ export default [
     meta: { data: true }
   },
   {
-    path: "/contact",
-    component: () => import(/* webpackChunkName: "page--src-pages-contact-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Contact.vue"),
+    path: "/about",
+    component: () => import(/* webpackChunkName: "page--src-pages-about-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\About.vue"),
     meta: { data: true }
   },
   {
@@ -37,13 +37,13 @@ export default [
     meta: { data: true }
   },
   {
-    path: "/skill",
-    component: () => import(/* webpackChunkName: "page--src-pages-skill-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Skill.vue"),
+    path: "/portfolio",
+    component: () => import(/* webpackChunkName: "page--src-pages-portfolio-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Portfolio.vue"),
     meta: { data: true }
   },
   {
-    path: "/portfolio",
-    component: () => import(/* webpackChunkName: "page--src-pages-portfolio-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Portfolio.vue"),
+    path: "/skill",
+    component: () => import(/* webpackChunkName: "page--src-pages-skill-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Skill.vue"),
     meta: { data: true }
   },
   {
