@@ -3,7 +3,7 @@
     <div class="article">
       <h1>{{ $page.blogPost.title }}</h1>
       <small style="color: #7a7a7a;">{{ $page.blogPost.date }}</small>
-      <g-image :src="$page.blogPost.image" style="margin-top:15px;" id="cover-image"/>
+      <g-image :src="$page.blogPost.image" style="margin-top:15px;" ref="coverImage"/>
       <div id="paragraph" v-html="$page.blogPost.content"/>
     </div>
     <div id="share-this">
@@ -57,14 +57,13 @@
         computed: {
             getImage() {
                 var url = "https://suryawiguna.com";
-                var img = document.getElementById("cover-image")
-                var text = img.getAttribute("data-src");
+                var img = this.$refs.coverImage;
+                var text = img.getAttribute('data-src');
                 var src = url + text;
                 return src;
             }
         },
         metaInfo () {
-            let image = this.getImage;
             return {
                 title: this.$page.blogPost.title,
                 meta: [
@@ -72,7 +71,7 @@
                     { name: "twitter:title", content: this.$page.blogPost.title },
                     { name: "twitter:description", content: this.$page.blogPost.description },
                     { name: "twitter:site", content: "@suryawigunaa" },
-                    { name: "twitter:image", content: image },
+                    { name: "twitter:image", content: this.getImage },
                     { name: "twitter:creator", content: "@suryawigunaa" },
                 ],
                 script: [{ src: "https://platform.twitter.com/widgets.js", async: true }]
