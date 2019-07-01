@@ -18,10 +18,10 @@ Memang selain Gridsome, ada juga Nuxt dan Vuepress yang sama-sama pakai Vue.js. 
 
 Beberapa hal baru yang aku pelajari saat develop website pakai gridsome adalah Markdown dan GraphQL selain Vue.js juga pastinya. Markdown dan GraphQL ini paling terasa saat *ngeblog*. Jadi biasanya orang *ngeblog* akan pakai text editor, tapi di Gridsome ini untuk buat postingan itu pakai file Markdown. Markdown itu intinya adalah file berekstensi .md yang punya format sendiri yang biasanya dipakai untuk membuat file statis seperti dokumentasi dan bisa juga untuk blog. Contohnya seperti ini:
 
-![markdown dari postingan ini](./images/markdown2.png)
+
 
 Sedangkan GraphQL itu merupakan bahasa query untuk mengambil data, yang penggunaannya familiar seperti JSON. Jadi ringkasnya setiap file .md yang ada akan menjadi sebuah postingan blog yang diterjemahkan lewat GraphQL ini. Explore lebih jauh di [websitenya GraphQL](https://graphql.org).
 
-![contoh query graphql](./images/graphql2.png)
+
 
 Untuk sekarang aku sudah cukup puas dengan websiteku sekarang, semoga dengan ini saya bisa lebih sering menulis untuk berbagi ke kalian tentang apapun yang terlintas.
