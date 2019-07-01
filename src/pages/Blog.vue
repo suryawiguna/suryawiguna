@@ -68,24 +68,31 @@
         font-size: 17px;
     }
     .blog-card {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
         margin: 0;
         border: 1px solid #dfdfdf;
         border-radius: 10px;
     }
     .blog-card>img {
         object-fit: cover;
-        width: 100%;
-        height: 300px;
-        border-top-right-radius: 10px;
+        width: 30%;
+        height: 200px;
+        border-bottom-left-radius: 10px;
         border-top-left-radius: 10px;
     }
     .blog-post {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
         padding: 30px;
     }
     .blog-card:hover {
         border: 1px solid #444444;
     }
     small {
+        align-self: flex-end;
         font-size: 11px;
         color: #7a7a7a;
     }
@@ -95,9 +102,16 @@
         font-weight: bold;
         font-family: 'Merriweather';
     }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 1080px) {
+        .blog-card {
+            flex-direction: column;
+        }
         .blog-card>img {
+            width: 100%;
             height: 150px;
+            border-bottom-left-radius: 0px;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
         }
     }
 </style>

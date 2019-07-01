@@ -2,7 +2,7 @@
 title: Website Yang Menyenangkan
 date: 2019-05-20 20:27:00
 slug: website-yang-menyenangkan
-description: "Sebuah website bisa menjadi sangat menyenangkan atau sangat menyebalkan. Tahu kenapa?"
+description: "Sebuah website bisa menjadi sangat menyenangkan atau menyebalkan"
 image: "./images/photo-1507297230445-ff678f10b524.jpg"
 ---
 
