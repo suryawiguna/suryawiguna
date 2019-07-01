@@ -20,7 +20,7 @@ Beberapa hal baru yang aku pelajari saat develop website pakai gridsome adalah M
 
 ![markdown dari postingan ini](./images/markdown.png)
 
-Sedangkan GraphQL itu merupakan query untuk mengambil data, yang penggunaannya familiar seperti JSON. Jadi ringkasnya setiap file .md yang ada akan menjadi sebuah postingan blog yang diterjemahkan lewat GraphQL ini. Explore lebih jauh di [websitenya GraphQL](https://graphql.org).
+Sedangkan GraphQL itu merupakan bahasa query untuk mengambil data, yang penggunaannya familiar seperti JSON. Jadi ringkasnya setiap file .md yang ada akan menjadi sebuah postingan blog yang diterjemahkan lewat GraphQL ini. Explore lebih jauh di [websitenya GraphQL](https://graphql.org).
 
 ![contoh query graphql](./images/graphql.png)
 
