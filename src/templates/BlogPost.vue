@@ -64,7 +64,7 @@
                 return coverImage;
             },
             getBaseUrl() {
-                return process.env.GRIDSOME_BASE_URL;
+                return "https://suryawiguna.com";
             }
         },
         metaInfo () {
