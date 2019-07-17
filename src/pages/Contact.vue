@@ -48,11 +48,6 @@ export default {
                     name: 'LinkedIn',
                     src: require('~/assets/images/linkedin.png'),
                     link: 'https://www.linkedin.com/in/suryawigunaa'
-                },
-                {
-                    name: 'GitHub',
-                    src: require('~/assets/images/github.jpg'),
-                    link: 'https://github.com/suryawiguna'
                 }
             ]
         }
