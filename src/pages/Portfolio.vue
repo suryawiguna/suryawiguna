@@ -29,7 +29,13 @@ export default {
                     class: 'btn btn-github'
                 },
                 {
-                    field: 'Design Graphics',
+                    field: 'UI Design',
+                    name: 'Behance',
+                    link: 'https://behance.net/suryawiguna',
+                    class: 'btn btn-behance'
+                },
+                {
+                    field: 'Photo Editing',
                     name: 'Instagram',
                     link: 'https://instagram.com/swgcreative',
                     class: 'btn btn-instagram'
