@@ -6,9 +6,16 @@
             <div class="link-wrapper">        
                 <p class="label">{{ val.field }}</p>
             </div>
-            <div class="link-wrapper">
-                <a v-bind:href="val.link" v-bind:class="val.class" target="_blank">{{val.name}}</a>
+            <div class="portfolio-container">
+                <div v-for="(val, key) in val.imgs" :key="key" class="link-wrapper">
+                    <a v-bind:href="val.link" class="p-link" target="_blank">
+                        <g-image :src="val.src" alt="" class="portfolio-img" />
+                    </a>
+                </div>
             </div>
+            <a v-bind:href="val.link" :class="val.class" target="_blank">
+                See more on {{val.name}}
+            </a>
         </div>
     </div>
   </Layout>
@@ -26,28 +33,95 @@ export default {
                     field: 'Programming',
                     name: 'GitHub',
                     link: 'https://github.com/suryawiguna',
-                    class: 'btn btn-github'
+                    class: 'btn btn-github',
+                    imgs: [
+                        {
+                            src: require('~/assets/images/portfolios/github/saksi.png'),
+                            link: 'https://github.com/suryawiguna/saksi',
+                        },
+                        {
+                            src: require('~/assets/images/portfolios/github/geopark.png'),
+                            link: 'https://github.com/suryawiguna/geopark',
+                        }
+                    ]
                 },
                 {
                     field: 'UI Design',
                     name: 'Behance',
                     link: 'https://behance.net/suryawiguna',
-                    class: 'btn btn-behance'
+                    class: 'btn btn-behance',
+                    imgs: [
+                        {
+                            src: require('~/assets/images/portfolios/uidesign/cover.jpg'),
+                            link: 'https://www.behance.net/gallery/83639655/Fruito-Web',
+                        },
+                        {
+                            src: require('~/assets/images/portfolios/uidesign/geopark_cover.jpg'),
+                            link: 'https://www.behance.net/gallery/82942741/Batur-Global-Geopark-Website-Concept',
+                        },
+                    ]
                 },
                 {
                     field: 'Photo Editing',
                     name: 'Instagram',
                     link: 'https://instagram.com/swgcreative',
-                    class: 'btn btn-instagram'
+                    class: 'btn btn-instagram',
+                    imgs: [
+                        {
+                            src: require('~/assets/images/portfolios/photoediting/ig.jpg'),
+                            link: 'https://www.instagram.com/p/BzfSks5gYEU/',
+                        },
+                    ]
                 },
                 {
-                    field: 'Photograph',
+                    field: 'Photography',
                     name: 'Shutterstock',
                     link: 'https://www.shutterstock.com/g/suryawigunaa',
-                    class: 'btn btn-shutterstock'
+                    class: 'btn btn-shutterstock',
+                    imgs: [
+                        {
+                            src: require('~/assets/images/portfolios/photography/langit.jpeg'),
+                            link: 'https://www.shutterstock.com/image-photo/big-wall-meeting-sky-afternoon-1205154844?src=xP5cyzalVAFqrFM2YSzeZQ-1-12',
+                        },
+                        {
+                            src: require('~/assets/images/portfolios/photography/tangga.jpeg'),
+                            link: 'https://www.shutterstock.com/image-photo/stairwell-bottom-your-life-1360709387?src=xP5cyzalVAFqrFM2YSzeZQ-1-4',
+                        },
+                        {
+                            src: require('~/assets/images/portfolios/photography/teratai.jpeg'),
+                            link: 'https://www.shutterstock.com/image-photo/lotus-bee-were-together-beautiful-day-1213547590?src=xP5cyzalVAFqrFM2YSzeZQ-1-8',
+                        },
+                    ]
                 }
             ],
         }
     },
 }
 </script>
+
+<style>
+    .portfolio-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .p-link {
+        flex: 1 0 50%;
+        margin: 5px;
+        transition: all .05s ease-in-out;
+    }
+    .p-link:hover {
+        filter: brightness(80%);
+        transform: scale(1.01);
+    }
+    .portfolio-img {
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    @media only screen and (max-width: 850px){
+        .link-wrapper {
+            width: 50%;
+        }
+    }
+</style>

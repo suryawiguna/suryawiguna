@@ -21,6 +21,11 @@ export default {
             experiences: [
                 {
                     years: '2019-now',
+                    name: 'Freelance Web Developer',
+                    desc: 'Fullstack web developer (UI Design & Implementation)'
+                },
+                {
+                    years: '2019-now',
                     name: 'KSU Sedana Graha',
                     desc: 'IT Officer'
                 },
@@ -40,7 +45,7 @@ export default {
                     desc: 'Internship Program as a Web Developer'
                 },
                 {
-                    years: '2016-today',
+                    years: '2016-now',
                     name: 'SWG Creative',
                     desc: 'Founder, Graphic Designer'
                 },

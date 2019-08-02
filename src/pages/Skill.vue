@@ -74,12 +74,18 @@ export default {
                     {
                         src: require('~/assets/images/vuejs.png'),
                         label: 'Vue.js',
-                        percent: 'value-30'
+                        percent: 'value-20'
                     }]
                 },
                 {
                     topic: 'Design',
-                    items: [{
+                    items: [
+                    {
+                        src: require('~/assets/images/xd.png'),
+                        label: 'Adobe Xd',
+                        percent: 'value-50'
+                    },
+                    {
                         src: require('~/assets/images/photoshop.jpg'),
                         label: 'Photoshop',
                         percent: 'value-50'
