@@ -1,19 +1,16 @@
 <template>
     <Layout>
-        <div v-for="{ node } in $page.allBlogPost.edges" :key="node._id">
+        <div id="card-container" v-for="{ node } in $page.allBlogPost.edges" :key="node._id">
             <g-link :to="node.path">
                 <div class="blog-card">
-                    <g-image :src="node.image" />
                     <div class="blog-post">
-
-                        <h5 class="title">
-                                {{ node.title }}
-                        </h5>
-                        <p v-html="node.description"></p>
-                        <div style="display: flex; justify-content: flex-end;">
+                        <p class="title">{{ node.title }}</p>
+                        <p class="desc" v-html="node.description"></p>
+                        <div style="display: flex; justify-content: flex-start; margin-top:10px;">
                             <small>{{ node.date }}</small>
                         </div>
                     </div>
+                    <g-image :src="node.image" />
                 </div>
             </g-link>
         </div>
@@ -56,62 +53,46 @@
         text-decoration: none;
         color: #000000;
     }
-    div>h5 {
-        text-decoration: none;
-        font-family: Volkorn;
+    .title {
+        font-size: 1.3em;
         font-weight: bold;
-        color: #000000;
-        font-size: 1.7em;
+        font-family: Merriweather;
+        padding: 0;
     }
-    div>p {
+    .desc {
         line-height: 1.5em;
-        font-size: 17px;
+        font-size: 16px;
+    }
+    #card-container {
+        margin: 0px 60px;
     }
     .blog-card {
         display: flex;
         flex-direction: row;
-        align-items: stretch;
-        margin: 0;
-        border: 1px solid #dfdfdf;
-        border-radius: 10px;
+        align-items: flex-start;
+        height: 100%;
     }
     .blog-card>img {
         object-fit: cover;
         width: 30%;
-        height: 200px;
-        border-bottom-left-radius: 10px;
-        border-top-left-radius: 10px;
+        height: 100%;
     }
     .blog-post {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 30px;
-    }
-    .blog-card:hover {
-        border: 1px solid #444444;
+        height: 100%;
+        margin-right: 20px;
     }
     small {
         align-self: flex-end;
         font-size: 11px;
         color: #7a7a7a;
     }
-    .title {
-        font-size: 1.5em;
-        margin-bottom: 5px;
-        font-weight: bold;
-        font-family: 'Merriweather';
-    }
-    @media only screen and (max-width: 1080px) {
-        .blog-card {
-            flex-direction: column;
-        }
-        .blog-card>img {
-            width: 100%;
-            height: 150px;
-            border-bottom-left-radius: 0px;
-            border-top-right-radius: 10px;
-            border-top-left-radius: 10px;
+    @media only screen and (max-width: 700px) {
+        #card-container {
+            padding: 0 10px;
+            margin: 0;
         }
     }
 </style>

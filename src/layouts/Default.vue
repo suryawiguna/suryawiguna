@@ -2,13 +2,27 @@
   <div id="app" class="container">
         <div class="nav-container">
             <div id="main-nav">
-              <g-link id="profile-nav" to="/" exact>Profile</g-link>
-              <g-link id="experience-nav" to="/experience" exact>Experience</g-link>
-              <g-link id="skill-nav" to="/skill" exact>Skill</g-link>
-              <g-link id="portfolio-nav" to="/portfolio" exact>Portfolio</g-link>
-              <g-link id="education-nav" to="/education" exact>Education</g-link>
-              <g-link id="contact-nav" to="/contact" exact>Contact</g-link>
-              <g-link to="/blog" exact>Blog</g-link>
+                <g-link id="profile-nav" to="/" exact>
+                    <li><span>Profile</span></li>
+                </g-link>
+                <g-link id="experience-nav" to="/experience" exact>
+                    <li><span>Experience</span></li>
+                </g-link>
+                <g-link id="skill-nav" to="/skill" exact>
+                    <li><span>Skill</span></li>
+                </g-link>
+                <g-link id="portfolio-nav" to="/portfolio" exact>
+                    <li><span>Portfolio</span></li>
+                </g-link>
+                <g-link id="education-nav" to="/education" exact>
+                    <li><span>Education</span></li>
+                </g-link>
+                <g-link id="contact-nav" to="/contact" exact>
+                    <li><span>Contact</span></li>
+                </g-link>
+                <g-link to="/blog" exact>
+                    <li><span>Blog</span></li>
+                </g-link>
             </div>
         </div>
 
@@ -55,13 +69,22 @@
     padding: 1.75em;
     font-size: 14px;
   }
-  #main-nav a:hover {    
-    font-weight: bold;
-  }
-  #main {
-    grid-area: main;
-    display: grid;
-  }
+    #main-nav a li {
+        padding: 0;
+        list-style: none;
+    }
+    #main-nav a li span {
+        border-radius: 100px;
+        padding: 5px 10px;
+    }
+    #main-nav a:hover li span {    
+        font-weight: bold;
+        background-color: #ecfbff;
+    }
+    #main {
+        grid-area: main;
+        display: grid;
+    }
   
   @media only screen and (max-width: 600px) {
     .container {
@@ -73,25 +96,28 @@
       "nav";
       width: 100%;
       max-width: 100%;
+      height: 100%;
+      max-height: 100%;
     }
     .nav-container {
         grid-area: nav;
         display: grid;
         grid-row: 2/3;
-      z-index: 1;
-      overflow-x: auto;
-      border-top: 1px solid #E0E0E0;
-      background-color: #FFFFFF;
-      border-right: none;
-      bottom: 0;
-      position: fixed;
-      width: 100%;
-      height: 50px;
-      overflow-y: hidden;
+        z-index: 1;
+        overflow-x: auto;
+        border-top: 1px solid #E0E0E0;
+        background-color: #FFFFFF;
+        border-right: none;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        overflow-y: hidden;
     }
     #main {
         grid-area: main;
         grid-row: 1/2;
+        height: 100%;
         overflow-y: auto;
     }
     #main-nav {

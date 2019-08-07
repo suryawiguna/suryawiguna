@@ -1,7 +1,7 @@
 export default [
   {
-    path: "/experience",
-    component: () => import(/* webpackChunkName: "page--src-pages-experience-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Experience.vue"),
+    path: "/contact",
+    component: () => import(/* webpackChunkName: "page--src-pages-contact-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Contact.vue"),
     meta: { data: true }
   },
   {
@@ -11,13 +11,8 @@ export default [
     meta: { data: true }
   },
   {
-    path: "/blog",
-    component: () => import(/* webpackChunkName: "page--src-pages-blog-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Blog.vue"),
-    meta: { data: true }
-  },
-  {
-    path: "/contact",
-    component: () => import(/* webpackChunkName: "page--src-pages-contact-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Contact.vue"),
+    path: "/about",
+    component: () => import(/* webpackChunkName: "page--src-pages-about-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\About.vue"),
     meta: { data: true }
   },
   {
@@ -26,8 +21,13 @@ export default [
     meta: { data: true }
   },
   {
-    path: "/about",
-    component: () => import(/* webpackChunkName: "page--src-pages-about-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\About.vue"),
+    path: "/experience",
+    component: () => import(/* webpackChunkName: "page--src-pages-experience-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Experience.vue"),
+    meta: { data: true }
+  },
+  {
+    path: "/blog",
+    component: () => import(/* webpackChunkName: "page--src-pages-blog-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Blog.vue"),
     meta: { data: true }
   },
   {

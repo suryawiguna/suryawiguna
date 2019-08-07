@@ -20,7 +20,7 @@ Hampir semua orang memiliki smartphone saat ini. Sebagian besar aktivitas ber-in
 
 Tidak semua wilayah di dunia ini merata kecepatan internetnya. Negara berkembang seperti Indonesia contohnya. Namun justru negara-negara berkembang inilah yang menjadi sasaran bisnis yang menjanjikan karena jumlah penduduknya yang tidak sedikit. Karena itu pelaku-pelaku bisnis yang fokus pada platform web akan berusaha agar website mereka bisa diakses cukup cepat walaupun dengan koneksi yang lambat.
 
-## Aman.
+## Aman
 ![aman](./images/photo-1508345228704-935cc84bf5e2.jpg)
 
 Keamanan data adalah hal yang sangat sensitif. Sebuah website yang menyimpan data penggunanya untuk keperluan berbelanja misalnya harus memiliki keamanan yang mumpuni untuk menjamin data pengguna mereka tidak disalahgunakan.

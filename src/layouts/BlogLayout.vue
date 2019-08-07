@@ -3,7 +3,9 @@
         <div class="nav-container">
             <div id="main-nav">
               <g-link id="nav-title" to="/blog" >Blog</g-link>
-              <g-link id="about-me" to="/" exact>About Me</g-link>
+              <g-link id="about-me" to="/" exact>
+                <li><span>About Me</span></li>
+              </g-link>
             </div>
         </div>
 
@@ -23,38 +25,44 @@
       margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 60px auto;
+    grid-template-rows: 60px 1fr;
     grid-template-areas: 
         "nav"
         "main";
-    width: 70%;
-    max-width: 960px;
+    width: 100%;
+    max-width: 100%;
     height: 100vh;
   }
   .nav-container {
       grid-area: nav;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     border-bottom: 1px solid #E0E0E0;
     position: fixed;
-    width: 70%;
-    max-width: 960px;
+    width: 100%;
+    max-width: 100%;
     height: 60px;
+    background-color: white;
   }
   .blog-container {
-      margin: 20px 0;
+      margin: 30px 0;
       display: grid;
-      grid-gap: 20px;
+      grid-gap: 30px;
       grid-template: 1fr/1fr;
       width: 100%;
   }
   #main-nav {
       width: 100%;
+      max-width: 800px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    padding: 0 15px;
+  }
+  .active {
+      font-weight: bold;
+      color: black;
   }
   a {
       text-decoration: none;
@@ -63,22 +71,36 @@
         text-decoration: none;
         color: rgb(29, 29, 29);
         font-size: 14px;
-        padding: 0 10px;
         height: 100%;
       display: flex;
       align-items: center;
   }
-  #main-nav a:hover {    
+  #main-nav a li {
+      padding: 0;
+        list-style: none;
+  }
+  #main-nav a li span {
+        border-radius: 100px;
+        padding: 5px 10px;
+        background-color: #fafafa;
+    }
+  #main-nav a:hover li span {
+        background-color: #ecfbff;
     font-weight: bold;
   }
   #main {
-    padding: 0px 130px;
     grid-area: main;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
   }
   #nav-title {
         font-size: 1.5em !important;
         font-weight: bold;
-        font-family: 'Merriweather';
+        font-family: Merriweather;
   }
   p {
       line-height: 1.4em;
@@ -122,10 +144,12 @@
       height: 50px;
       overflow-y: hidden;
     }
+    #main-nav {
+        width: 100%;
+    }
     #main {
         grid-area: main;
         overflow-y: auto;
-        padding: 0 20px;
     }
     #main-nav a {
       font-size: 14px;

@@ -1,40 +1,44 @@
 <template>
   <Layout>
-    <div class="article">
-      <h1>{{ $page.blogPost.title }}</h1>
-      <small style="color: #7a7a7a;">{{ $page.blogPost.date }}</small>
-      <g-image :src="$page.blogPost.image" style="margin-top:15px;"/>
-      <div id="paragraph" v-html="$page.blogPost.content"/>
-    </div>
-    <div id="share-this">
-        <h5>Share This</h5>
-        <div id="share-buttons">    
-            <!-- Facebook -->
-            <a id="share-fb" href="#" target="_blank" class="share-btn" title="Share to Facebook">
-                <span class="mdi mdi-facebook mdi-24px"></span>
-            </a>
-            <!-- WhatsApp -->
-            <a id="share-wa" href="#" target="_blank" class="share-btn" title="Share to WhatsApp">
-                <span class="mdi mdi-whatsapp mdi-24px"></span>
-            </a>
-            <!-- Twitter -->
-            <a id="share-twitter" href="#" target="_blank" class="share-btn" title="Share to Twitter">
-                <span class="mdi mdi-twitter mdi-24px"></span>                
-            </a>
-            <!-- LinkedIn -->
-            <a id="share-linkedin" href="#" target="_blank" class="share-btn" title="Share to LinkedIn">
-                <span class="mdi mdi-linkedin mdi-24px"></span>                
-            </a>
-            <!-- Email -->
-            <a id="share-email" href="#" class="share-btn" title="Share to Email">
-                <span class="mdi mdi-email mdi-24px"></span>
-            </a>
+    <div class="post-container">
+        <div class="article">
+        <h1>{{ $page.blogPost.title }}</h1>
+        <small style="color: #7a7a7a;">{{ $page.blogPost.date }}</small>
+        <g-image :src="$page.blogPost.image" style="margin-top:15px;"/>
+        <div id="paragraph" v-html="$page.blogPost.content"/>
+        </div>
+        <div id="share-this">
+            <h5>Share This</h5>
+            <div id="share-buttons">    
+                <!-- Facebook -->
+                <a id="share-fb" href="#" target="_blank" class="share-btn" title="Share to Facebook">
+                    <span class="mdi mdi-facebook mdi-24px"></span>
+                </a>
+                <!-- WhatsApp -->
+                <a id="share-wa" href="#" target="_blank" class="share-btn" title="Share to WhatsApp">
+                    <span class="mdi mdi-whatsapp mdi-24px"></span>
+                </a>
+                <!-- Twitter -->
+                <a id="share-twitter" href="#" target="_blank" class="share-btn" title="Share to Twitter">
+                    <span class="mdi mdi-twitter mdi-24px"></span>                
+                </a>
+                <!-- LinkedIn -->
+                <a id="share-linkedin" href="#" target="_blank" class="share-btn" title="Share to LinkedIn">
+                    <span class="mdi mdi-linkedin mdi-24px"></span>                
+                </a>
+                <!-- Email -->
+                <a id="share-email" href="#" class="share-btn" title="Share to Email">
+                    <span class="mdi mdi-email mdi-24px"></span>
+                </a>
+            </div>
+        </div>
+        <vue-disqus shortname="suryawigunaa" :identifier="$page.blogPost.title"></vue-disqus>
+        <div class="footer-btn">
+            <g-link id="all-post" title="See all posts" to="/blog">
+                <span class="mdi mdi-arrow-left"></span> All posts
+            </g-link>
         </div>
     </div>
-    <vue-disqus shortname="suryawigunaa" :identifier="$page.blogPost.title"></vue-disqus>
-    <g-link id="all-post" to="/blog">
-        <span class="mdi mdi-arrow-left"></span> All posts
-    </g-link>
   </Layout>
 </template>
 
@@ -97,9 +101,23 @@
 </script>
 
 <style>
+    .post-container {
+        padding: 0 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-btn {
+        margin: 70px 0 0;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
     #paragraph, #sharethis {
         width: 100%;
         max-width: 100%;
+    }
+    #share-this {
+        margin: 40px 0;
     }
     p>a {
         color: #000000;
@@ -128,11 +146,12 @@
     #share-email {background-color: #444444;}
     .article>h1 {
         margin: 0px 0 10px;
+        font-size: 2em;
         font-family: Merriweather;
-        font-size: 2.3em;
     }
     #paragraph>h2 {
         margin-top: 30px;
+        font-family: Merriweather;
     }
     #paragraph>p {
         font-size: 17px;
@@ -144,18 +163,21 @@
         max-width: 100%;
     }
     #all-post {
-        justify-self: center;
+        font-weight: 400;
         text-decoration: none;
-        border:1px solid #bbbbbb;
-        color: #888888;
-        padding:10px 15px;
+        color: #FFFFFF;
+        background-color: #6d6d6d;
+        padding: 5px 15px;
         border-radius:20px;
     }
     #all-post:hover {
-        color: #444444;  
-        border:1px solid #444444;
+        font-weight: bold;
+        background-color: #2b2b2b;
     }
     @media only screen and (max-width: 700px) {
+        .post-container {
+            padding: 0 10px;
+        }
         #paragraph>p>img {
             max-width: 100%;
         }
