@@ -27,7 +27,7 @@
                     path
                     slug
                     description
-                    date (format: "D MMM YYYY")
+                    date (format: "D MMMM YYYY")
                     image
                 }
             }
