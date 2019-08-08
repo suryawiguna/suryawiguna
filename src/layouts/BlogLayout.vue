@@ -85,7 +85,7 @@
         background-color: #fafafa;
     }
   #main-nav a:hover li span {
-        background-color: #ecfbff;
+        background-color: #fffeaf;
     font-weight: bold;
   }
   #main {

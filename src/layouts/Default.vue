@@ -79,7 +79,7 @@
     }
     #main-nav a:hover li span {    
         font-weight: bold;
-        background-color: #ecfbff;
+        background-color: #fffeaf;
     }
     #main {
         grid-area: main;
