@@ -36,11 +36,11 @@ export default {
                     class: 'btn btn-github',
                     imgs: [
                         {
-                            src: require('~/assets/images/portfolios/github/saksi.png'),
+                            src: require('~/assets/images/portfolios/programming/saksi.png'),
                             link: 'https://github.com/suryawiguna/saksi',
                         },
                         {
-                            src: require('~/assets/images/portfolios/github/geopark.png'),
+                            src: require('~/assets/images/portfolios/programming/geopark.png'),
                             link: 'https://github.com/suryawiguna/geopark',
                         }
                     ]
@@ -62,15 +62,19 @@ export default {
                     ]
                 },
                 {
-                    field: 'Photo Editing',
+                    field: 'Graphic Design',
                     name: 'Instagram',
                     link: 'https://instagram.com/swgcreative',
                     class: 'btn btn-instagram',
                     imgs: [
                         {
-                            src: require('~/assets/images/portfolios/photoediting/ig.jpg'),
-                            link: 'https://www.instagram.com/p/BzfSks5gYEU/',
+                            src: require('~/assets/images/portfolios/graphicdesign/piesusu.jpg'),
+                            link: 'https://www.instagram.com/p/BrM9GXdB9nc/',
                         },
+                        {
+                            src: require('~/assets/images/portfolios/graphicdesign/ig.jpg'),
+                            link: 'https://www.instagram.com/p/BzfSks5gYEU/',
+                        }
                     ]
                 },
                 {
@@ -80,16 +84,16 @@ export default {
                     class: 'btn btn-shutterstock',
                     imgs: [
                         {
-                            src: require('~/assets/images/portfolios/photography/langit.jpeg'),
-                            link: 'https://www.shutterstock.com/image-photo/big-wall-meeting-sky-afternoon-1205154844?src=xP5cyzalVAFqrFM2YSzeZQ-1-12',
+                            src: require('~/assets/images/portfolios/photography/sky.jpg'),
+                            link: 'https://www.shutterstock.com/image-photo/big-wall-meeting-sky-afternoon-1205154844',
                         },
                         {
-                            src: require('~/assets/images/portfolios/photography/tangga.jpeg'),
-                            link: 'https://www.shutterstock.com/image-photo/stairwell-bottom-your-life-1360709387?src=xP5cyzalVAFqrFM2YSzeZQ-1-4',
+                            src: require('~/assets/images/portfolios/photography/stairs.png'),
+                            link: 'https://www.shutterstock.com/image-photo/stairwell-bottom-your-life-1360709387',
                         },
                         {
-                            src: require('~/assets/images/portfolios/photography/teratai.jpeg'),
-                            link: 'https://www.shutterstock.com/image-photo/lotus-bee-were-together-beautiful-day-1213547590?src=xP5cyzalVAFqrFM2YSzeZQ-1-8',
+                            src: require('~/assets/images/portfolios/photography/lotus.png'),
+                            link: 'https://www.shutterstock.com/image-photo/lotus-bee-were-together-beautiful-day-1213547590',
                         },
                     ]
                 }
@@ -106,16 +110,16 @@ export default {
         flex-wrap: wrap;
     }
     .p-link {
+        filter: brightness(80%);
         flex: 1 0 50%;
         margin: 5px;
         transition: all .05s ease-in-out;
     }
     .p-link:hover {
-        filter: brightness(80%);
+        filter: brightness(100%);
         transform: scale(1.01);
     }
     .portfolio-img {
-        border-radius: 10px;
         width: 100%;
         height: 100%;
     }

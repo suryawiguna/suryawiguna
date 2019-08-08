@@ -1,8 +1,7 @@
 export default [
   {
-    name: "home",
-    path: "/",
-    component: () => import(/* webpackChunkName: "page--src-pages-index-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Index.vue"),
+    path: "/experience",
+    component: () => import(/* webpackChunkName: "page--src-pages-experience-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Experience.vue"),
     meta: { data: true }
   },
   {
@@ -12,23 +11,8 @@ export default [
     meta: { data: true }
   },
   {
-    path: "/blog",
-    component: () => import(/* webpackChunkName: "page--src-pages-blog-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Blog.vue"),
-    meta: { data: true }
-  },
-  {
     path: "/contact",
     component: () => import(/* webpackChunkName: "page--src-pages-contact-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Contact.vue"),
-    meta: { data: true }
-  },
-  {
-    path: "/education",
-    component: () => import(/* webpackChunkName: "page--src-pages-education-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Education.vue"),
-    meta: { data: true }
-  },
-  {
-    path: "/experience",
-    component: () => import(/* webpackChunkName: "page--src-pages-experience-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Experience.vue"),
     meta: { data: true }
   },
   {
@@ -37,8 +21,24 @@ export default [
     meta: { data: true }
   },
   {
+    path: "/education",
+    component: () => import(/* webpackChunkName: "page--src-pages-education-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Education.vue"),
+    meta: { data: true }
+  },
+  {
     path: "/portfolio",
     component: () => import(/* webpackChunkName: "page--src-pages-portfolio-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Portfolio.vue"),
+    meta: { data: true }
+  },
+  {
+    path: "/blog",
+    component: () => import(/* webpackChunkName: "page--src-pages-blog-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Blog.vue"),
+    meta: { data: true }
+  },
+  {
+    name: "home",
+    path: "/",
+    component: () => import(/* webpackChunkName: "page--src-pages-index-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Index.vue"),
     meta: { data: true }
   },
   {
