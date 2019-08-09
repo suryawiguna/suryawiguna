@@ -137,7 +137,7 @@
         width: 35px;
     }
     .share-btn:hover {
-        box-shadow: 0 0 0px 1px #000000;
+        box-shadow: 0 0 0px 3px #000000;
     }
     #share-fb {background-color: #3b5998;}
     #share-wa {background-color: #25d366;}

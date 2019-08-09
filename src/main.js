@@ -12,14 +12,6 @@ export default function (Vue, { router, head, isClient }) {
 
   Vue.use(VueDisqus)
 
-  router.options.scrollBehavior = function(to, from , savedPosition) {
-    if (to.hash) {
-        return {
-          selector: to.hash
-          // , offset: { x: 0, y: 10 }
-        }
-      }
-  }
 
   head.link.push({
     rel: 'stylesheet',
