@@ -28,54 +28,33 @@ export default {
             skills: [
                 {
                     topic: 'Programming',
-                    items: [{
-                        src: require('~/assets/images/html5.png'),
-                        label: 'HTML5',
-                        percent: 'value-50'
-                    },
-                    {
-                        src: require('~/assets/images/css3.jpg'),
-                        label: 'CSS3',
-                        percent: 'value-50'
-                    },
-                    {
-                        src: require('~/assets/images/js.png'),
-                        label: 'JavaScript',
-                        percent: 'value-40'
-                    },
-                    {
-                        src: require('~/assets/images/php.jpg'),
-                        label: 'PHP',
-                        percent: 'value-50'
-                    },
-                    {
-                        src: require('~/assets/images/android.jpg'),
-                        label: 'Android',
-                        percent: 'value-10'
-                    },
-                    {
-                        src: require('~/assets/images/sql.jpg'),
-                        label: 'MySQL',
-                        percent: 'value-40'
-                    }]
-                },
-                {
-                    topic: 'Frameworks',
-                    items: [{
-                        src: require('~/assets/images/laravel.jpg'),
-                        label: 'Laravel',
-                        percent: 'value-50'
-                    },
-                    {
-                        src: require('~/assets/images/bootstrap.jpg'),
-                        label: 'Bootstrap',
-                        percent: 'value-60'
-                    },
-                    {
-                        src: require('~/assets/images/vuejs.png'),
-                        label: 'Vue.js',
-                        percent: 'value-20'
-                    }]
+                    items: [
+                        {
+                            src: require('~/assets/images/laravel.jpg'),
+                            label: 'Laravel',
+                            percent: 'value-70'
+                        },
+                        {
+                            src: require('~/assets/images/js.png'),
+                            label: 'JavaScript',
+                            percent: 'value-40'
+                        },
+                        {
+                            src: require('~/assets/images/vuejs.png'),
+                            label: 'Vue.js',
+                            percent: 'value-20'
+                        },
+                        {
+                            src: require('~/assets/images/android.jpg'),
+                            label: 'Android',
+                            percent: 'value-30'
+                        },
+                        {
+                            src: require('~/assets/images/bootstrap.jpg'),
+                            label: 'Bootstrap',
+                            percent: 'value-60'
+                        }
+                    ]
                 },
                 {
                     topic: 'Design',

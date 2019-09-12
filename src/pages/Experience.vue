@@ -21,13 +21,13 @@ export default {
             experiences: [
                 {
                     years: '2019-now',
-                    name: 'Freelance Web Developer',
-                    desc: 'Fullstack web developer (UI Design & Implementation)'
+                    name: 'Ganeca Digital',
+                    desc: 'Fullstack web developer (Laravel & UI Design)'
                 },
                 {
                     years: '2019-now',
                     name: 'KSU Sedana Graha',
-                    desc: 'IT Officer'
+                    desc: 'IT Officer & Progammer'
                 },
                 {
                     years: '2018',
@@ -36,14 +36,14 @@ export default {
                 },
                 {
                     years: '2018',
-                    name: 'Web-based System Development Project',
-                    desc: 'Information system for recording witnesses for the election of a Balinese governor for one of the parties'
+                    name: 'Web Developer (Internship)',
+                    desc: 'Developing system to recording witnesses for the election of a Balinese governor from one of the parties'
                 },
-                {
-                    years: '2018',
-                    name: 'CV. Artibali Mesari',
-                    desc: 'Internship Program as a Web Developer'
-                },
+                // {
+                //     years: '2018',
+                //     name: 'CV. Artibali Mesari',
+                //     desc: 'Internship Program as a Web Developer'
+                // },
                 {
                     years: '2016-now',
                     name: 'SWG Creative',
