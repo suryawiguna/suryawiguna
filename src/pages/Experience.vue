@@ -22,7 +22,7 @@ export default {
                 {
                     years: '2019-now',
                     name: 'Ganeca Digital',
-                    desc: 'Fullstack web developer (Laravel & UI Design)'
+                    desc: 'Web developer (Laravel)'
                 },
                 {
                     years: '2019-now',
@@ -36,8 +36,8 @@ export default {
                 },
                 {
                     years: '2018',
-                    name: 'Web Developer (Internship)',
-                    desc: 'Developing system to recording witnesses for the election of a Balinese governor from one of the parties'
+                    name: 'Internship as Web Developer',
+                    desc: 'Developing web-based system to recording witnesses for the election of a Balinese governor from one of the parties'
                 },
                 // {
                 //     years: '2018',

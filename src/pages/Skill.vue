@@ -42,17 +42,17 @@ export default {
                         {
                             src: require('~/assets/images/vuejs.png'),
                             label: 'Vue.js',
-                            percent: 'value-20'
+                            percent: 'value-30'
                         },
                         {
                             src: require('~/assets/images/android.jpg'),
                             label: 'Android',
-                            percent: 'value-30'
+                            percent: 'value-10'
                         },
                         {
                             src: require('~/assets/images/bootstrap.jpg'),
                             label: 'Bootstrap',
-                            percent: 'value-60'
+                            percent: 'value-70'
                         }
                     ]
                 },
