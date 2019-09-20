@@ -30,7 +30,7 @@ export default {
                     topic: 'Programming',
                     items: [
                         {
-                            src: require('~/assets/images/laravel.jpg'),
+                            src: require('~/assets/images/laravel.png'),
                             label: 'Laravel',
                             percent: 'value-70'
                         },
@@ -40,19 +40,19 @@ export default {
                             percent: 'value-40'
                         },
                         {
-                            src: require('~/assets/images/vuejs.png'),
-                            label: 'Vue.js',
-                            percent: 'value-30'
-                        },
-                        {
-                            src: require('~/assets/images/android.jpg'),
-                            label: 'Android',
-                            percent: 'value-10'
-                        },
-                        {
                             src: require('~/assets/images/bootstrap.jpg'),
                             label: 'Bootstrap',
                             percent: 'value-70'
+                        },
+                        {
+                            src: require('~/assets/images/vuejs.png'),
+                            label: 'Vue.js',
+                            percent: 'value-20'
+                        },
+                        {
+                            src: require('~/assets/images/flutter.png'),
+                            label: 'Flutter',
+                            percent: 'value-10'
                         }
                     ]
                 },
