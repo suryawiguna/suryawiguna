@@ -27,7 +27,7 @@ export default {
                 {
                     name: 'Email',
                     src: require('~/assets/images/email.png'),
-                    link: 'mailto:suryawigunaa@gmail.com'
+                    link: 'mailto:ketut@suryawiguna.com'
                 },
                 {
                     name: 'Facebook',
