@@ -6,8 +6,9 @@ export default [
     meta: { data: true }
   },
   {
-    path: "/about",
-    component: () => import(/* webpackChunkName: "page--src-pages-about-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\About.vue"),
+    name: "404",
+    path: "/404",
+    component: () => import(/* webpackChunkName: "page--src-pages-404-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\404.vue"),
     meta: { data: true }
   },
   {
@@ -31,9 +32,8 @@ export default [
     meta: { data: true }
   },
   {
-    name: "404",
-    path: "/404",
-    component: () => import(/* webpackChunkName: "page--src-pages-404-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\404.vue"),
+    path: "/about",
+    component: () => import(/* webpackChunkName: "page--src-pages-about-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\About.vue"),
     meta: { data: true }
   },
   {
