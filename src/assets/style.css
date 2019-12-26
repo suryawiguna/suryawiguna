@@ -93,6 +93,7 @@
   }
   .content {
       margin-left: 60px;
+      overflow-x: hidden;
   }
   .content-text {
     display: grid;
@@ -172,6 +173,7 @@
     .content {
       margin-left: 5em;
       margin-right: 5em;
+      overflow-x: hidden;
     }
     .skill-items {
       grid-template-columns: repeat(3, 1fr);
@@ -185,6 +187,7 @@
     }
     .content {
       margin: 0 20px;
+      overflow-x: hidden;
     }
     .label {
       font-size: 0.75em;

@@ -61,6 +61,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     background-color: white;
+    overflow-x: hidden;
   }
   
   #main-nav a {
@@ -122,6 +123,7 @@
     }
     #main-nav {
       display: flex;
+      overflow-x: scroll;
     }
     #main-nav a {
       flex: 1 0 100px;

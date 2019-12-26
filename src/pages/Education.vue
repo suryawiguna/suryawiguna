@@ -22,7 +22,7 @@ export default {
                 {
                     years: '2015-2019',
                     name: 'STMIK STIKOM Bali',
-                    desc: 'Information System (S1)'
+                    desc: 'Bachelor of Information System'
                 },
                 {
                     years: '2012-2015',

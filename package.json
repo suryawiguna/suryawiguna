@@ -11,6 +11,10 @@
     "@gridsome/source-filesystem": "^0.4.1",
     "@gridsome/transformer-remark": "^0.3.0",
     "gridsome": "^0.6.2",
+    "gridsome-plugin-pwa": "^0.0.10",
     "vue-disqus": "^3.0.5"
+  },
+  "devDependencies": {
+    "gridsome-plugin-manifest": "^0.1.1"
   }
 }

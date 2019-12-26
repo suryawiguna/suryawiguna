@@ -30,6 +30,16 @@ export default {
                     link: 'mailto:ketut@suryawiguna.com'
                 },
                 {
+                    name: 'LinkedIn',
+                    src: require('~/assets/images/linkedin.png'),
+                    link: 'https://www.linkedin.com/in/suryawigunaa'
+                },
+                {
+                    name: 'Instagram',
+                    src: require('~/assets/images/instagram.png'),
+                    link: 'https://instagram.com/suryawigunaa'
+                },
+                {
                     name: 'Facebook',
                     src: require('~/assets/images/facebook.png'),
                     link: 'https://facebook.com/suryawigunaa'
@@ -39,16 +49,6 @@ export default {
                     src: require('~/assets/images/twitter.png'),
                     link: 'https://twitter.com/suryawigunaa'
                 },
-                {
-                    name: 'Instagram',
-                    src: require('~/assets/images/instagram.png'),
-                    link: 'https://instagram.com/suryawigunaa'
-                },
-                {
-                    name: 'LinkedIn',
-                    src: require('~/assets/images/linkedin.png'),
-                    link: 'https://www.linkedin.com/in/suryawigunaa'
-                }
             ]
         }
     },

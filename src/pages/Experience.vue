@@ -25,9 +25,29 @@ export default {
                     desc: 'Web developer (Laravel)'
                 },
                 {
+                    years: '2018-now',
+                    name: 'Freelance',
+                    desc: 'Web developer'
+                },
+                {
                     years: '2019-now',
                     name: 'KSU Sedana Graha',
                     desc: 'IT Officer & Progammer'
+                },
+                {
+                    years: '2019',
+                    name: 'Kelas Membangun Progressive Web Apps (Dicoding.com)',
+                    desc: 'Graduated'
+                },
+                {
+                    years: '2019',
+                    name: 'Fullstack Web Developer Course (BuildWithAngga.com)',
+                    desc: 'Graduated'
+                },
+                {
+                    years: '2018',
+                    name: 'Mobile Web Specialist by Google Developers Kejar',
+                    desc: 'Participant'
                 },
                 {
                     years: '2018',

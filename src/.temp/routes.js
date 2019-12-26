@@ -6,19 +6,13 @@ export default [
     meta: { data: true }
   },
   {
-    name: "404",
-    path: "/404",
-    component: () => import(/* webpackChunkName: "page--src-pages-404-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\404.vue"),
+    path: "/about",
+    component: () => import(/* webpackChunkName: "page--src-pages-about-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\About.vue"),
     meta: { data: true }
   },
   {
     path: "/blog",
     component: () => import(/* webpackChunkName: "page--src-pages-blog-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Blog.vue"),
-    meta: { data: true }
-  },
-  {
-    path: "/experience",
-    component: () => import(/* webpackChunkName: "page--src-pages-experience-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Experience.vue"),
     meta: { data: true }
   },
   {
@@ -32,8 +26,14 @@ export default [
     meta: { data: true }
   },
   {
-    path: "/about",
-    component: () => import(/* webpackChunkName: "page--src-pages-about-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\About.vue"),
+    path: "/experience",
+    component: () => import(/* webpackChunkName: "page--src-pages-experience-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Experience.vue"),
+    meta: { data: true }
+  },
+  {
+    name: "404",
+    path: "/404",
+    component: () => import(/* webpackChunkName: "page--src-pages-404-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\404.vue"),
     meta: { data: true }
   },
   {

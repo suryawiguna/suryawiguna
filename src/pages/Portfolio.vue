@@ -36,13 +36,21 @@ export default {
                     class: 'btn btn-github',
                     imgs: [
                         {
+                            src: require('~/assets/images/portfolios/programming/football-pwa.png'),
+                            link: 'https://github.com/suryawiguna/Premiere-League-PWA',
+                        },
+                        {
                             src: require('~/assets/images/portfolios/programming/saksi.png'),
                             link: 'https://github.com/suryawiguna/saksi',
                         },
                         {
                             src: require('~/assets/images/portfolios/programming/geopark.png'),
                             link: 'https://github.com/suryawiguna/geopark',
-                        }
+                        },
+                        {
+                            src: require('~/assets/images/portfolios/programming/mbx.png'),
+                            link: 'https://github.com/suryawiguna/mbx',
+                        },
                     ]
                 },
                 {
