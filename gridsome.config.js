@@ -15,34 +15,34 @@ module.exports = {
             route: '/blog/:slug'
         }
     },
-    // {
-    //     use: 'gridsome-plugin-pwa',
-    //     options: {
-    //         title: 'Surya Wiguna',
-    //         startUrl: '/',
-    //         display: 'standalone',
-    //         statusBarStyle: 'default',
-    //         manifestPath: 'manifest.json',
-    //         serviceWorkerPath: 'service-worker.js',
-    //         cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg',
-    //         shortName: 'Surya',
-    //         themeColor: '#FB8E16',
-    //         backgroundColor: '#ffffff',
-    //         icon: './src/favicon.png', // must be provided
-    //         msTileImage: '',
-    //         msTileColor: '#FB8E16'
-    //     }
-    // },
-    // {
-    //     use: "gridsome-plugin-manifest",
-    //     options: {
-    //         backgroundColor: "#FFFFFF",
-    //         iconPath: "./src/favicon.png",
-    //         name: "Surya Wiguna",
-    //         shortName: "Surya",
-    //         themeColor: "#FB8E16",
-    //     },
-    // },
+    {
+        use: 'gridsome-plugin-pwa',
+        options: {
+            title: 'Surya Wiguna',
+            startUrl: '/',
+            display: 'standalone',
+            statusBarStyle: 'default',
+            manifestPath: 'manifest.json',
+            serviceWorkerPath: 'service-worker.js',
+            cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg',
+            shortName: 'Surya',
+            themeColor: '#FB8E16',
+            backgroundColor: '#ffffff',
+            icon: './src/favicon.png', // must be provided
+            msTileImage: '',
+            msTileColor: '#FB8E16'
+        }
+    },
+    {
+        use: "gridsome-plugin-manifest",
+        options: {
+            backgroundColor: "#FFFFFF",
+            iconPath: "./src/favicon.png",
+            name: "Surya Wiguna",
+            shortName: "Surya",
+            themeColor: "#FB8E16",
+        },
+    },
   ],
   transformers: {
     remark: {
