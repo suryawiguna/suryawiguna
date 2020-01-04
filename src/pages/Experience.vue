@@ -25,7 +25,7 @@ export default {
                     desc: 'Web developer (Laravel)'
                 },
                 {
-                    years: '2018-now',
+                    years: '2019-now',
                     name: 'Freelance',
                     desc: 'Web developer'
                 },

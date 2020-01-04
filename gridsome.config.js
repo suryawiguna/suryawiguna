@@ -36,11 +36,12 @@ module.exports = {
     // {
     //     use: "gridsome-plugin-manifest",
     //     options: {
-    //         backgroundColor: "#FFFFFF",
-    //         iconPath: "./src/favicon.png",
-    //         name: "Surya Wiguna",
-    //         shortName: "Surya",
-    //         themeColor: "#FB8E16",
+    //         background_color: "#000000",
+    //         icon_path: "./src/assets/img/icon.png",
+    //         name: "My app name",
+    //         short_name: "App",
+    //         theme_color: "#FFFFFF",
+    //         lang: "en",
     //     },
     // },
   ],
