@@ -3,7 +3,7 @@
     <div id="profile" class="content">
         <h1>Profile</h1>
         <div class="image">
-            <g-image src="~/assets/images/me2.jpg" alt="" id="me"/>
+            <g-image src="~/assets/images/me2.jpg" alt="" id="me" width="400" height="400" quality="75"/>
         </div>
         <div v-for="(value, key) in profile" :key="key" class="content-text">
             <p class="label">{{ key }}</p>

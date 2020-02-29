@@ -1,7 +1,8 @@
 export default [
   {
-    path: "/portfolio",
-    component: () => import(/* webpackChunkName: "page--src-pages-portfolio-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Portfolio.vue")
+    name: "home",
+    path: "/",
+    component: () => import(/* webpackChunkName: "page--src-pages-index-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Index.vue")
   },
   {
     name: "404",
@@ -32,9 +33,8 @@ export default [
     component: () => import(/* webpackChunkName: "page--src-pages-about-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\About.vue")
   },
   {
-    name: "home",
-    path: "/",
-    component: () => import(/* webpackChunkName: "page--src-pages-index-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Index.vue")
+    path: "/portfolio",
+    component: () => import(/* webpackChunkName: "page--src-pages-portfolio-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Portfolio.vue")
   },
   {
     path: "/skill",

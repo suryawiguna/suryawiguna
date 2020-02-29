@@ -9,7 +9,7 @@
             <div class="portfolio-container">
                 <div v-for="(val, key) in val.imgs" :key="key" class="link-wrapper">
                     <a v-bind:href="val.link" class="p-link" target="_blank">
-                        <g-image :src="val.src" alt="" class="portfolio-img" />
+                        <g-image :src="val.src" alt="" class="portfolio-img" width="400" quality="75"/>
                     </a>
                 </div>
             </div>
@@ -36,8 +36,12 @@ export default {
                     class: 'btn btn-github',
                     imgs: [
                         {
+                            src: require('~/assets/images/portfolios/programming/gastrip.jpg'),
+                            link: 'https://gastrip.netlify.com/',
+                        },
+                        {
                             src: require('~/assets/images/portfolios/programming/football-pwa.png'),
-                            link: 'https://github.com/suryawiguna/Premiere-League-PWA',
+                            link: 'https://premiere-league-app-100.firebaseapp.com/',
                         },
                         {
                             src: require('~/assets/images/portfolios/programming/saksi.png'),
@@ -45,7 +49,7 @@ export default {
                         },
                         {
                             src: require('~/assets/images/portfolios/programming/geopark.png'),
-                            link: 'https://github.com/suryawiguna/geopark',
+                            link: 'https://geopark.netlify.com/',
                         },
                         {
                             src: require('~/assets/images/portfolios/programming/mbx.png'),
