@@ -20,17 +20,17 @@ export default {
         return {
             experiences: [
                 {
-                    years: '2019-now',
+                    years: '2019 - now',
                     name: 'Ganeca Digital',
                     desc: 'Web developer (Laravel)'
                 },
                 {
-                    years: '2019-now',
+                    years: '2019 - now',
                     name: 'Freelance',
                     desc: 'Web developer'
                 },
                 {
-                    years: '2019-now',
+                    years: '2019 - 2020',
                     name: 'KSU Sedana Graha',
                     desc: 'IT Officer & Progammer'
                 },
@@ -65,7 +65,7 @@ export default {
                 //     desc: 'Internship Program as a Web Developer'
                 // },
                 {
-                    years: '2016-now',
+                    years: '2016 - now',
                     name: 'SWG Creative',
                     desc: 'Founder, Graphic Designer'
                 },
@@ -75,12 +75,12 @@ export default {
                     desc: 'Member'
                 },
                 {
-                    years: '2016-2017',
+                    years: '2016 - 2017',
                     name: 'Unit Kegiatan Mahasiswa Programming of STIKOM Bali (UKM PROGRESS)',
                     desc: 'Chairman'
                 },
                 {
-                    years: '2015-2016',
+                    years: '2015 - 2016',
                     name: 'Unit Kegiatan Mahasiswa Programming of STIKOM Bali (UKM PROGRESS)',
                     desc: 'Vice Chairman 2'
                 }
