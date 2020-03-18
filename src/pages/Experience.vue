@@ -20,6 +20,11 @@ export default {
         return {
             experiences: [
                 {
+                    years: '2020 - now',
+                    name: 'Igloohome',
+                    desc: 'Software Tester (QA)'
+                },
+                {
                     years: '2019 - now',
                     name: 'Ganeca Digital',
                     desc: 'Web developer (Laravel)'
