@@ -185,7 +185,8 @@
       font-weight: bold;
     }
     .content {
-      margin: 0 20px;
+      margin: 0;
+      padding: 0 20px;
       overflow-x: hidden;
     }
     .label {
