@@ -195,9 +195,6 @@
     .text {
       font-size: 1em;
     }
-    #skill {
-      padding: 0;
-    }
     .skill-items {
         grid-gap: 1em;
       grid-template-columns: repeat(2, 1fr);

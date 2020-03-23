@@ -1,7 +1,8 @@
 export default [
   {
-    path: "/experience",
-    component: () => import(/* webpackChunkName: "page--src-pages-experience-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Experience.vue")
+    name: "home",
+    path: "/",
+    component: () => import(/* webpackChunkName: "page--src-pages-index-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Index.vue")
   },
   {
     name: "404",
@@ -24,9 +25,8 @@ export default [
     component: () => import(/* webpackChunkName: "page--src-pages-education-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Education.vue")
   },
   {
-    name: "home",
-    path: "/",
-    component: () => import(/* webpackChunkName: "page--src-pages-index-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Index.vue")
+    path: "/experience",
+    component: () => import(/* webpackChunkName: "page--src-pages-experience-vue" */ "D:\\gridsome\\suryawiguna\\src\\pages\\Experience.vue")
   },
   {
     path: "/about",

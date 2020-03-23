@@ -22,17 +22,17 @@ export default {
                 {
                     years: '2020 - now',
                     name: 'Igloohome',
-                    desc: 'Software Tester (QA)'
+                    desc: 'Software Tester (Quality Assurance)'
                 },
                 {
                     years: '2019 - now',
                     name: 'Ganeca Digital',
-                    desc: 'Web developer (Laravel)'
+                    desc: 'Web Developer (Laravel)'
                 },
                 {
                     years: '2019 - now',
                     name: 'Freelance',
-                    desc: 'Web developer'
+                    desc: 'Web Developer'
                 },
                 {
                     years: '2019 - 2020',
