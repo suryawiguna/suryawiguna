@@ -37,7 +37,7 @@ export default {
                     imgs: [
                         {
                             src: require('~/assets/images/portfolios/programming/gastrip.jpg'),
-                            link: 'https://gastrip.netlify.com/',
+                            link: 'https://gastrip.herokuapp.com/',
                         },
                         {
                             src: require('~/assets/images/portfolios/programming/football-pwa.png'),
